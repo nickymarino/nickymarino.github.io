@@ -1,0 +1,12 @@
+.container {
+    padding-top: 1rem;
+}
+
+.hero {
+    padding: 2rem;
+}
+
+.label-blue {
+    background-color: #2C6AF2;
+    color: #FFFFFF;
+}
