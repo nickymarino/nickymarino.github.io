@@ -1,11 +1,8 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-#relative_permalinks: true
 
 # Setup
-title:               Nicky Marino
+title:               nickymarino.com
 tagline:             ''
 description:         'Description for the sidebar'
 url:                 http://nickymarino.com
@@ -19,8 +16,9 @@ plugins:
 # About/contact
 author:
   name:              Nicky Marino
-  url:               https://twitter.com/_NickyMarino
-  email:
+  url:               http://nickymarino.com
+  twitter:           https://twitter.com/_NickyMarino
+  email:             nicky.s.marino@gmail.com
+  github:            https://github.com/nickymarino
 
-# Custom vars
-version:             1.0.0
+twitter_feed:        https://twitter.com/NickyMarino_com
