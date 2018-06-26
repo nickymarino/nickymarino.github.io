@@ -8,3 +8,4 @@ My site
 [ ] Fix sidebar description
 [ ] Add tagline
 [ ] Change fonts
+[ ] Fix tab name (includes comment)
