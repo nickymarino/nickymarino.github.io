@@ -6,3 +6,5 @@ My site
 
 [ ] Fix `public/apple-touch-icon-precomposed.png`
 [ ] Fix sidebar description
+[ ] Add tagline
+[ ] Change fonts
