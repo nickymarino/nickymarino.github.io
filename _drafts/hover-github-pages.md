@@ -17,7 +17,7 @@ First you need to update your repository with your custom domain. In the setting
 
 ## A Records on Hover
 
-Find [GitHub's current list of IP addresses](Then, go to your [Hover](https://www.hover.com/) account, select your domain, and go to the DNS tab) to add to the DNS tab on Hover. At the time of writing, these are:
+The next step is to configure Hover. Find [GitHub's current list of IP addresses](https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider) to create records with. Then, go to your [Hover](https://www.hover.com/) account, select your domain, and go to the DNS tab) to add to the DNS tab on Hover. At the time of writing, these are:
 
 ```
 185.199.108.153
