@@ -7,7 +7,7 @@ My blog is currently hosted using [GitHub Pages](https://pages.github.com/)&mdas
 
 ## Preflight Check
 
-Before connecting GitHub Pages to a custom domain, I first updated my blog on my repository `username.github.io`, and checked that it was displaying properly at its default website (normally `https://username.github.io`).
+Before connecting GitHub Pages to a custom domain, I first updated my blog on my repository [nickymarino.github.io](https://github.com/nickymarino/nickymarino.github.io), and checked that it was displaying properly at its default website (normally https://nickymarino.github.io).
 
 ## Link the Repo to the Domain
 
