@@ -9,3 +9,8 @@ My site
 - [ ] Add tagline
 - [ ] Change fonts
 - [ ] Add tag system
+- [ ] `/random` redirects to [fourth post](https://xkcd.com/221/)
+- [ ] Add `{% if has_affiliate_links %}` to page template
+
+## Wishlist
+- [ ] Blog post cover images
