@@ -12,6 +12,7 @@ paginate-path:       'page:num'
 plugins:
   - jekyll-paginate
   - jemoji
+  - jekyll-redirect-from
 
 # About/contact
 author:
