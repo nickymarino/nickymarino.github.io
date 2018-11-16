@@ -8,3 +8,7 @@ img.emoji {
     padding: 0;
     margin: 0;
 }
+
+.post-title {
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
