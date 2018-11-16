@@ -7,7 +7,7 @@ tagline:             ''
 description:         'Nicky Marino'
 url:                 http://nickymarino.com
 baseurl:             ''
-paginate:            5
+paginate:            15
 paginate-path:       'page:num'
 plugins:
   - jekyll-paginate
