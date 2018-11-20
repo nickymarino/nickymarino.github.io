@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "Screenshotting on the iPad"
-is_link: true
+title: iPad Screenshots
+external_link: https://leancrew.com/all-this/2018/11/screenshooting-on-the-ipad/
 ---
 
-
-
-[Dr. Drang](https://leancrew.com/all-this/2018/11/screenshooting-on-the-ipad/):
+Dr. Drang:
 
 > On the iPad, ⇧⌘3 captures the whole screen, just like the Mac (and just like capturing with the top and
 > volume up buttons). The ⇧⌘4 shortcut also captures the whole screen, but in a neat analogy to the Mac,
