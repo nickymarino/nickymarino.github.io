@@ -10,5 +10,6 @@ img.emoji {
 }
 
 .post-title {
-    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-weight: 800;
 }
