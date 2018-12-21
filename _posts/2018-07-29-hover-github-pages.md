@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Pointing a Github Pages Repo to a Hover Domain
-image_folder: hover-github-pages
+image_folder: 2018/hover-github-pages
 ---
-{% assign image_subfolder = '/assets/hover-github-pages' %}
-{% capture image_path %}{{ '/assets/' | append: page.image_folder | absolute_url }}{% endcapture %}
 
-My blog is currently hosted using [GitHub Pages](https://pages.github.com/)&mdash;which is a great way to host your static site or blog for free&mdash;by linking it to my custom domain that I purchased through [Hover](https://www.hover.com/). While both of these services are amazing, connecting the two required many open tabs and several waiting periods. This post will explain the steps needed to point a GitHub Pages repo to a custom domain on Hover. 
+My blog is currently hosted using [GitHub Pages](https://pages.github.com/)&mdash;which is a great way to host your static site or blog for free&mdash;by linking it to my custom domain that I purchased through [Hover](https://www.hover.com/). While both of these services are amazing, connecting the two required many open tabs and several waiting periods. This post will explain the steps needed to point a GitHub Pages repo to a custom domain on Hover.
 
 ## Preflight Check
 
@@ -14,7 +12,7 @@ Before connecting GitHub Pages to a custom domain, I first updated my blog on my
 
 ## Link the Repo to the Domain
 
-First you need to update your repository with your custom domain. In the settings for the repo, enter the domain in the "Custom domain" in the GitHub Pages section. 
+First you need to update your repository with your custom domain. In the settings for the repo, enter the domain in the "Custom domain" in the GitHub Pages section.
 
 ![GitHub Pages settings for the repo]({% include _functions/image_path.html name='settings.png' %})
 
@@ -33,7 +31,7 @@ Then, go to your [Hover](https://www.hover.com/) account, select your domain, an
 
 For each IP address on GitHub's help pages, add a DNS record. For each, the "Type" will be `A`, the "Hostname" will be `@`, and the "TTL" can be left as the default value.
 
-![Hover DNS settings]({% include _functions/image_path.html name='hover.png' %}) 
+![Hover DNS settings]({% include _functions/image_path.html name='hover.png' %})
 
 It may take several hours (or up to about a day) for the changes to take effect. Take a break, get some sleep, and then come back to your domain to make sure everything's working. Now we can enforce HTTPS!
 
