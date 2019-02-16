@@ -7,4 +7,4 @@
 - [ ] Add tag system
 - [ ] `/random` redirects to [fourth post](https://xkcd.com/221/)
 - [ ] Add `{% if has_affiliate_links %}` to page template
-- [ ] Blog post cover images
+- [ ] Add [preview banner images](https://css-tricks.com/essential-meta-tags-social-media/) for Facebook and Twitter
