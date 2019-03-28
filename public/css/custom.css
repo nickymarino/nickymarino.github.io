@@ -1,3 +1,4 @@
+/* Add styling for emojis */
 img.emoji {
     display: inline-block;
     left: 0;
@@ -9,7 +10,25 @@ img.emoji {
     margin: 0;
 }
 
+/* Make the post titles sans-serif */
 .post-title {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
+}
+
+/* Make header color match the paragraph text */
+h1, h2, h3, h4, h5, h6 {
+    /* Headers are larger, so the color needs to be slightly lighter to actually look the same */
+    color: #636363;
+}
+
+/* Horizontally center image */
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Don't include this so the sizing can be changed in the post
+     * width: 50%;
+     */
 }
