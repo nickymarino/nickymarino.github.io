@@ -3,19 +3,11 @@ layout: page
 title: About
 ---
 
-I'm Nicky Marino, and I'm a developer studying Computer Engineering at Purdue University.  
-
-## Current Projects
-
-I'm a Software Engineering Intern working primarily with C using [FreeRTOS](https://www.freertos.org/) on various microcontrollers. I also write scripts and user interfaces in Python and Node JS.
-
-I'm also the Head Teaching Assistant for Purdue's [Honors Engineering](https://engineering.purdue.edu/Honors) intro course, where we cover a variety of topics including teamwork, project management, scripting, and solving real world problems. I'm head of the software team, which handles the behind-the-scenes scripts and tools to help the class run smoothly.
-
-I'm working on a few projects that haven't come out yet, such as a podcast and an iOS app.
-
-Finally, this site is one of my hobbies :blush:
+I'm Nicky Marino, and I'm a developer with a degree in Computer Engineering from Purdue University.
 
 ## Past Projects
+
+I was the Head Teaching Assistant for Purdue's [Honors Engineering](https://engineering.purdue.edu/Honors) intro course, where we covered a variety of topics including teamwork, project management, scripting, and solving real world problems. I was head of the software team, which handles the behind-the-scenes scripts and tools to help the class run smoothly.
 
 I worked with a team of 3 other students to build an ASIC [RC4/SD Card encryption](https://github.com/nickymarino/ece337project) design.
 
