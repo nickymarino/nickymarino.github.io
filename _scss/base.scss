@@ -1,0 +1,47 @@
+@import "theme";
+
+/* Make the post titles sans-serif */
+.post-title {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+
+.post-date {
+    color: $color-post-date;
+}
+
+body {
+    color: $color-text;
+}
+
+/* Make header color match the paragraph text */
+h1, h2, h3, h4, h5, h6 {
+    /* Headers are larger, so the color needs to be slightly lighter to actually look the same */
+    color: $color-text;
+}
+
+// Links
+
+.container a,
+.container a:visited {
+    color: $color-link-text;
+    text-decoration: none;
+    border-bottom: 2px solid $color-link-line;
+}
+
+.container a:hover,
+.container a:focus {
+    color: $color-text;
+    border-bottom: 2px solid $color-primary;
+}
+
+.post-title a {
+    border: transparent;
+}
+
+.masthead a {
+    border: transparent;
+    text-decoration: none;
+}
+
+

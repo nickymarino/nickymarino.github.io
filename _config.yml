@@ -1,6 +1,3 @@
-# Permalinks
-permalink:           pretty
-
 # Setup
 title:               nickymarino.com
 tagline:             ''
@@ -23,3 +20,13 @@ author:
   github:            https://github.com/nickymarino
 
 twitter_feed:        https://twitter.com/NickyMarino_com
+
+# Permalinks
+permalink:           pretty
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            :compressed

@@ -314,8 +314,7 @@ a.sidebar-nav-item:focus {
 
 /* Blog post or page title */
 .page-title,
-.post-title,
-.post-title a {
+.post-title {
   color: #303030;
 }
 .page-title,
@@ -328,7 +327,6 @@ a.sidebar-nav-item:focus {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
 }
 
 /* Related posts */
@@ -347,13 +345,6 @@ a.sidebar-nav-item:focus {
 .related-posts li small {
   font-size: 75%;
   color: #999;
-}
-.related-posts li a:hover {
-  color: #268bd2;
-  text-decoration: none;
-}
-.related-posts li a:hover small {
-  color: inherit;
 }
 
 
@@ -446,11 +437,6 @@ a.pagination-item:hover {
 .theme-base-08 .sidebar-toggle:active,
 .theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #ac4142;
-}
-.theme-base-08 .container a,
-.theme-base-08 .sidebar-toggle,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
 }
 
 /* Orange */
