@@ -4,6 +4,10 @@
 @import "container";
 @import "post";
 
+html {
+  font-family: $font-stack-body;
+}
+
 body {
     font-family: $font-stack-body;
     color: $color-text;
@@ -37,7 +41,25 @@ img.center {
     margin-right: auto;
 }
 
-.masthead a {
-    border: transparent;
-    text-decoration: none;
+// Wrap
+//
+// Size the masthead and container together
+
+.wrap {
+  max-width: 28rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media (min-width: 38em) {
+  .wrap {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .wrap {
+    max-width: 38rem;
+  }
 }
