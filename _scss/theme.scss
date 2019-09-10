@@ -1,3 +1,8 @@
+// Fonts
+$font-stack-headings: 'Lora', Palatino, serif;
+$font-stack-body: Helvetica, Arial, sans-serif;
+$font-stack-mono: Menlo, Monaco, 'Courier New', monospace;
+
 // Theme colors
 $color-background: white;
 $color-primary: black;  
@@ -10,6 +15,9 @@ $color-link-text: $color-primary;
 $color-link-line: $color-secondary;
 
 $color-post-date: $color-light;
+
+$color-code: $color-primary;
+$color-code-background: #f9f9f9;
 
 $color-alert-background: #fff3cd;
 $color-alert-border: #ffeeba;

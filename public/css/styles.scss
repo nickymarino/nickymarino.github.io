@@ -2,7 +2,5 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-// Imports
+// Import base, which will import other scss files 
 @import "base";
-@import "img";
-@import "alert";

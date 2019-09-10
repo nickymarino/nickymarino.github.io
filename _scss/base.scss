@@ -1,47 +1,43 @@
 @import "theme";
 
-/* Make the post titles sans-serif */
-.post-title {
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
-    font-weight: 800;
-}
-
-.post-date {
-    color: $color-post-date;
-}
+@import "alert";
+@import "container";
+@import "post";
 
 body {
+    font-family: $font-stack-body;
     color: $color-text;
 }
 
-/* Make header color match the paragraph text */
 h1, h2, h3, h4, h5, h6 {
-    /* Headers are larger, so the color needs to be slightly lighter to actually look the same */
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.25;
+    font-family: $font-stack-headings;
     color: $color-text;
+    text-rendering: optimizeLegibility;
 }
 
-// Links
-
-.container a,
-.container a:visited {
-    color: $color-link-text;
-    text-decoration: none;
-    border-bottom: 2px solid $color-link-line;
+// Better emoji support 
+img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
 }
 
-.container a:hover,
-.container a:focus {
-    color: $color-text;
-    border-bottom: 2px solid $color-primary;
-}
-
-.post-title a {
-    border: transparent;
+// Horizontally center images
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .masthead a {
     border: transparent;
     text-decoration: none;
 }
-
-

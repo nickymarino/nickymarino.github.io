@@ -54,7 +54,7 @@ html {
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -80,13 +80,6 @@ a:focus {
 } */
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: bold;
-  line-height: 1.25;
-  color: #313131;
-  text-rendering: optimizeLegibility;
-}
 h1 {
   font-size: 2rem;
 }
@@ -148,10 +141,6 @@ abbr[title] {
 }
 
 /* Code */
-code,
-pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-}
 code {
   padding: .25em .5em;
   font-size: 85%;
@@ -334,10 +323,6 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Blog post or page title */
-.page-title,
-.post-title {
-  color: #303030;
-}
 .page-title,
 .post-title {
   margin-top: 0;

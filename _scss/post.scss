@@ -1,0 +1,16 @@
+@import "theme";
+
+.post-title {
+    font-family: $font-stack-headings;
+    font-weight: 700;
+}
+
+.post-title a {
+    border: transparent;
+}
+
+.post-date {
+    font-family: $font-stack-headings;
+    letter-spacing: -0.01em;
+    color: $color-post-date;
+}
