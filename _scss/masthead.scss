@@ -1,4 +1,45 @@
-.masthead a {
-    border: transparent;
-    text-decoration: none;
+// .masthead a {
+//     border: transparent;
+//     text-decoration: none;
+// }
+
+.masthead {
+    font-family: $font-stack-headings;
+    padding-top:    1rem;
+    padding-bottom: 1rem;
+}
+
+.masthead-title {
+    float: left;
+}
+
+.masthead nav.container {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+
+        $separator-padding: 5px;
+        
+        li {
+            float: left;
+
+            a {
+                padding-left: $separator-padding;
+                padding-right: $separator-padding + $nav-separator-thickness;
+                border-right: $nav-separator-thickness solid $color-link-line;
+                border-bottom: none;
+            }
+        }
+
+        li:first-child a {
+            padding-left: 0;
+        }
+
+        li:last-child a {
+            padding-right: 0;
+            border-right: 0;
+        }
+    }
 }
