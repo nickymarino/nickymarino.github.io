@@ -7,7 +7,7 @@ $font-stack-mono: Menlo, Monaco, 'Courier New', monospace;
 
 // Theme colors
 $color-background: white;
-$color-primary: black;  
+$color-primary: black;
 $color-secondary: #fcd731;
 $color-light: #9a9a9a;
 
@@ -22,7 +22,7 @@ $color-text: $color-primary;
 
 // Links
 $link-underline-thickness: $accent-thickness;
-$color-link-text: $color-primary; 
+$color-link-text: $color-primary;
 $color-link-line: $color-secondary;
 
 // Posts
@@ -38,4 +38,4 @@ $color-alert-border: #ffeeba;
 $color-alert-content: #b3890b;
 
 // Navbar
-$nav-separator-thickness: 0;//$accent-thickness;
+$nav-separator-thickness: 0; //$accent-thickness;

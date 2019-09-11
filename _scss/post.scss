@@ -1,12 +1,17 @@
 @import "theme";
+@import "mixins";
 
 .post-title {
     font-family: $font-stack-headings;
     font-weight: 700;
-}
 
-.post-title a {
-    border: transparent;
+    a {
+        border: none;
+
+        &:hover {
+            @include default-link-style;
+        }
+    }
 }
 
 .post-date {

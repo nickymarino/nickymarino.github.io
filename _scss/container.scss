@@ -1,18 +1,10 @@
 @import "theme";
+@import "mixins";
 
 // Links
 
-.container a,
-.container a:visited {
-    color: $color-link-text;
-    text-decoration: none;
-    border-bottom: $link-underline-thickness solid $color-link-line;
-}
-
-.container a:hover,
-.container a:focus {
-    color: $color-text;
-    border-bottom: $link-underline-thickness solid $color-primary;
+.container a {
+    @include default-link-style;
 }
 
 // Code

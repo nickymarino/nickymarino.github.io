@@ -23,7 +23,11 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
 }
 
-// Better emoji support 
+.lead {
+  font-family: $font-stack-headings;
+}
+
+// Better emoji support
 img.emoji {
     display: inline-block;
     left: 0;

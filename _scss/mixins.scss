@@ -1,0 +1,7 @@
+@import "theme";
+
+@mixin default-link-style {
+    color: $color-link-text;
+    text-decoration: none;
+    border-bottom: $link-underline-thickness solid $color-link-line;
+}
