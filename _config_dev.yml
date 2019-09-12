@@ -1,0 +1,3 @@
+# Heroku dev preview uses a different url than the production version
+url:                 https://nm-github-io-dev.herokuapp.com
+baseurl:             ''
