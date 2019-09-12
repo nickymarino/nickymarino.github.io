@@ -27,8 +27,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-stack-headings;
 }
 
-// Better emoji support
-img.emoji {
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: $color-quote-text;
+  border-left: .25rem solid $color-quote-border;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+/* Images */
+img {
+  // Better emoji support
+  .emoji {
     display: inline-block;
     left: 0;
     transform: none;
@@ -37,18 +56,20 @@ img.emoji {
     vertical-align: text-top;
     padding: 0;
     margin: 0;
-}
+  }
 
-// Horizontally center images
-img.center {
+  // Horizontally center images
+  .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
 }
 
-// Wrap
-//
-// Size the masthead and container together
+/* Wrap
+ *
+ * Size the masthead and container together
+ */
 
 .wrap {
   max-width: 28rem;
@@ -58,13 +79,21 @@ img.center {
   margin-right: auto;
 }
 
+// Mobile screen sizes
 @media (min-width: 38em) {
   .wrap {
     max-width: 32rem;
   }
 }
+// Medium (tablet) screen sizes
 @media (min-width: 56em) {
   .wrap {
     max-width: 38rem;
+  }
+}
+// Desktop screen sizes
+@media (min-width: 100em) {
+  .wrap {
+    max-width: 46rem;
   }
 }

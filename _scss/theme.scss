@@ -25,6 +25,13 @@ $link-underline-thickness: $accent-thickness;
 $color-link-text: $color-primary;
 $color-link-line: $color-secondary;
 
+// Navbar
+$nav-separator-thickness: 0;
+
+// Quotes
+$color-quote-text: $color-primary;
+$color-quote-border: #dcdcdc;
+
 // Posts
 $color-post-date: $color-light;
 
@@ -37,5 +44,3 @@ $color-alert-background: #fff3cd;
 $color-alert-border: #ffeeba;
 $color-alert-content: #b3890b;
 
-// Navbar
-$nav-separator-thickness: 0; //$accent-thickness;
