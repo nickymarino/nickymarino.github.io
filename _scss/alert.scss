@@ -1,0 +1,21 @@
+// Styling for toast-like alert notifications
+
+@import "theme";
+
+.alert {
+    background-color: $color-alert-background;
+    border: 1px solid;
+    border-color: $color-alert-border;
+    border-radius: .25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+.alert-title,
+.alert-content {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color-alert-content;
+}

@@ -54,12 +54,12 @@ html {
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 body {
-  color: #515151;
+  /* color: #515151; */
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -74,19 +74,12 @@ a strong {
   color: inherit;
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
-a:hover,
+/* a:hover,
 a:focus {
   text-decoration: underline;
-}
+} */
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: bold;
-  line-height: 1.25;
-  color: #313131;
-  text-rendering: optimizeLegibility;
-}
 h1 {
   font-size: 2rem;
 }
@@ -148,10 +141,6 @@ abbr[title] {
 }
 
 /* Code */
-code,
-pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-}
 code {
   padding: .25em .5em;
   font-size: 85%;
@@ -210,23 +199,6 @@ pre code {
   border-radius: 0;
 }
 
-/* Quotes */
-blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
-}
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 30em) {
-  blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
-  }
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -280,37 +252,17 @@ tbody tr:nth-child(odd) th {
 
 
 /*
- * Container
- *
- * Center the page content.
- */
-
-.container {
-  max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
-}
-
-
-/*
  * Masthead
  *
  * Super small header above the content for site name and short description.
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
-}
-.masthead-title a {
   color: #505050;
 }
 .masthead-title small {
@@ -335,11 +287,6 @@ tbody tr:nth-child(odd) th {
 
 /* Blog post or page title */
 .page-title,
-.post-title,
-.post-title a {
-  color: #303030;
-}
-.page-title,
 .post-title {
   margin-top: 0;
 }
@@ -349,7 +296,6 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
 }
 
 /* Related posts */
@@ -368,13 +314,6 @@ tbody tr:nth-child(odd) th {
 .related-posts li small {
   font-size: 75%;
   color: #999;
-}
-.related-posts li a:hover {
-  color: #268bd2;
-  text-decoration: none;
-}
-.related-posts li a:hover small {
-  color: inherit;
 }
 
 

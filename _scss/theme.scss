@@ -1,0 +1,46 @@
+/* Theme elements */
+
+// Fonts
+$font-stack-headings: 'Lora', Palatino, serif;
+$font-stack-body: Helvetica, Arial, sans-serif;
+$font-stack-mono: Menlo, Monaco, 'Courier New', monospace;
+
+// Theme colors
+$color-background: white;
+$color-primary: black;
+$color-secondary: #fcd731;
+$color-light: #9a9a9a;
+
+// Standard thickness for accents such as link
+// underlining and navbar separators
+$accent-thickness: 2px;
+
+/* Map theme to site elements */
+
+// Base
+$color-text: $color-primary;
+
+// Links
+$link-underline-thickness: $accent-thickness;
+$color-link-text: $color-primary;
+$color-link-line: $color-secondary;
+
+// Navbar
+$nav-separator-thickness: 0;
+
+// Quotes
+$color-quote-text: $color-primary;
+$color-quote-border: #dcdcdc;
+
+// Posts
+$color-post-date: $color-light;
+
+// Code
+$color-code: $color-primary;
+$color-code-background: #f9f9f9;
+
+// Alerts
+$color-alert-background: #fff3cd;
+$color-alert-border: #ffeeba;
+$color-alert-content: #b3890b;
+

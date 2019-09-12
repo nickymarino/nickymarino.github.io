@@ -1,0 +1,10 @@
+@import "theme";
+
+@mixin default-link-style {
+    color: $color-link-text;
+    text-decoration: none;
+    border-bottom: $link-underline-thickness solid $color-link-line;
+
+    // Leave some space for hanging letters (g, j, p, etc.)
+    padding-bottom: 2px;
+}

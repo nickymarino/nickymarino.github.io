@@ -1,0 +1,56 @@
+@import "theme";
+@import "mixins";
+
+.masthead {
+    font-family: $font-stack-headings;
+    padding-top:    1rem;
+    padding-bottom: 1rem;
+}
+
+.masthead-title {
+    line-height: inherit;
+    float: left;
+
+    a {
+        @include default-link-style;
+    }
+}
+
+.masthead-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: .25em; // Align with masthead title
+    float: right;
+
+    $separator-padding: 5px;
+
+    li {
+        float: left;
+        padding-left: $separator-padding;
+        padding-right: $separator-padding + $nav-separator-thickness;
+        border-right: $nav-separator-thickness solid $color-link-line;
+
+        // vertical-align: bottom;
+
+        a {
+            font-weight: bold;
+
+            // Hide underlines until hover
+            @include default-link-style;
+            border-bottom: none;
+            &:hover, &:focus, &:active {
+                @include default-link-style;
+            }
+        }
+    }
+
+    li:first-child {
+        padding-left: 0;
+    }
+
+    li:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+}
