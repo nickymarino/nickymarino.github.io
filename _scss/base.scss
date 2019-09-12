@@ -4,6 +4,7 @@
 @import "container";
 @import "post";
 @import "masthead";
+@import "highlight";
 
 html {
   font-family: $font-stack-body;
@@ -45,25 +46,24 @@ blockquote p:last-child {
 }
 
 /* Images */
-img {
-  // Better emoji support
-  .emoji {
-    display: inline-block;
-    left: 0;
-    transform: none;
-    width: 20px;
-    height: 20px;
-    vertical-align: text-top;
-    padding: 0;
-    margin: 0;
-  }
 
-  // Horizontally center images
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+// Better emoji support
+img.emoji {
+  display: inline-block;
+  left: 0;
+  transform: none;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+  padding: 0;
+  margin: 0;
+}
+
+// Horizontally center images
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Wrap
