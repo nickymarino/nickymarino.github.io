@@ -1,5 +1,5 @@
 {% if page.image_folder %}
-    {% if include.name %}{{ '/assets/' | append: page.image_folder | append: '/' | append: include.name | absolute_url }}{% else %}
+    {% if include.name %}{{ '/public/assets/' | append: page.image_folder | append: '/' | append: include.name | absolute_url }}{% else %}
     image_path.html error: no name argument in include
     {% endif %}
 {% else %}

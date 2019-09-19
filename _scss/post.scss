@@ -1,0 +1,21 @@
+@import "theme";
+@import "mixins";
+
+.post-title {
+    font-family: $font-stack-headings;
+    font-weight: 700;
+
+    a {
+        border: none;
+
+        &:hover {
+            @include default-link-style;
+        }
+    }
+}
+
+.post-date {
+    font-family: $font-stack-headings;
+    letter-spacing: -0.01em;
+    color: $color-post-date;
+}
