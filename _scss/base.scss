@@ -16,12 +16,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin-top: .5rem;
     margin-bottom: .5rem;
     font-weight: bold;
     line-height: 1.25;
     font-family: $font-stack-headings;
     color: $color-text;
     text-rendering: optimizeLegibility;
+}
+
+.footer a {
+  @include default-link-style;
 }
 
 .lead {
