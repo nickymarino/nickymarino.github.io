@@ -1,6 +1,11 @@
 /* Ruby Rogue highlighter (compatible with Pygments themes) */
 
 .highlight {
+    code {
+        // Set the default code text color
+        color: $color-background;
+    }
+
     /* Monokai theme */
     pre { background-color: #272822; }
     .hll { background-color: #272822; }
