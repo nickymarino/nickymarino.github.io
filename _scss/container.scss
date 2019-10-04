@@ -3,7 +3,8 @@
 
 // Links
 
-.container a {
+.container a,
+.container a code {
     @include default-link-style;
 }
 
