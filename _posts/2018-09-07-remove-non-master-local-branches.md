@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Removing Local Git Branches That Aren't `master`
+title: Removing Local Git Branches That Aren't 'master'
 ---
 
 Every so often, I'll want to delete all of my local branches for a repository that aren't the `master` branch. An easy command to do this is:

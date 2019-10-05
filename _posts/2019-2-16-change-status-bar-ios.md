@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change the Status Bar Style in iOS 12
+title: How to Change the Status Bar Style in iOS 12
 image_folder: 2019/change-status-bar-ios
 ---
 
