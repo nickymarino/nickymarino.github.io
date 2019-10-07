@@ -5,7 +5,7 @@ title: How to Build a Song Recommender Using Create ML MLRecommender
 
 <div class="alert">
     <p class="alert-title"><b>Beta Warning</b></p>
-    <p class="alert-content">This example was written using macOS Catalina Version 10.15 Beta and Xcode Version 11.0 beta 5. Changes may have been made to the MLRecommender constructor since the time of writing.</p>
+    <p class="alert-content">This example was written using macOS Catalina Version 10.15 Beta and Xcode Version 11.0 beta 5. Changes may have been made to the MLRecommender constructor since this article was written (October 2019).</p>
 </div>
 
 ## Objective
