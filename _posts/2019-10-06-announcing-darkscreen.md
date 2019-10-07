@@ -4,22 +4,22 @@ title: Announcing Darkscreen - A Dark App
 image_folder: 2019/announcing-darkscreen
 ---
 
-{% assign app_store_link = "https://google.com" %}
+{% assign testflight_link = "https://testflight.apple.com/join/s4Sa9sEJ" %}
 
-I'm so excited to announce that my first iOS app, Darkscreen - A Dark App, has launched on the app store! Ever since I was given my first iPod (all the way back in 7th grade!) I've dreamed of creating something that millions of people have the ability to enjoy, and I can't express how giddy I am. Here's the official description on the [App Store]({{ app_store_link }}):
+I'm so excited to announce that my first iOS app, Darkscreen - A Dark App, has a [public beta on Testflight]({{ testflight_link }})! Ever since I was given my first iPod (all the way back in 7th grade!) I've dreamed of creating something that millions of people have the ability to enjoy, and I can't express how excited I am. Here's the official description:
 
 
-> Darkscreen allows you to use other iPad apps in Split View without any distractions, no hassle. 
-> 
+> Darkscreen allows you to use other iPad apps in Split View without any distractions, no hassle.
+>
 > Darkscreen provides multiple themes, including:
-> 
+>
 > - Dark
 > - Light
 > - 80s
 > - 90s
 > - Outrun
 
-Download from the [App Store]({{ app_store_link }}) today!
+Download using [Testflight]({{ testflight_link }}) today!
 
 ## Why Darkscreen?
 
@@ -41,7 +41,7 @@ My next goal, of course, is for Darkscreen to respond to the system-wide [Dark M
 
 ## Why Open Source?
 
-I found it an interesting challenge to modify the appearance of all of all views in the app immediately after a user selects a theme in a `UITableView`, and I hope this brief example can help other developers implement their own theme system. 
+I found it an interesting challenge to modify the appearance of all of all views in the app immediately after a user selects a theme in a `UITableView`, and I hope this brief example can help other developers implement their own theme system.
 
 Even though iOS 13 introduces [system-wide Dark Mode](https://developer.apple.com/documentation/xcode/supporting_dark_mode_in_your_interface), this example app can be helpful to support any custom themes that go beyond the default dark and light styles.
 
@@ -62,7 +62,7 @@ A `Theme` corresponds to UI styles and colors:
 
 ```swift
 class Theme {
-    
+
     // ...
 
     init(_ name: String, statusBar: UIStatusBarStyle, background: UIColor, primary: UIColor, secondary: UIColor) {
