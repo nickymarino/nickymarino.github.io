@@ -3,73 +3,50 @@ layout: post
 title: Fast Introduction to Node APIs
 ---
 
-# Intro
+## Intro
 
-https://adventofcode.com/2019/day/3
+[Advent of Code](https://adventofcode.com/) is a fun, annual Advent calendar of small programming challenges. This post will be a walkthrough of a few solutions to the 2019 [Advent of Code Day 3](https://adventofcode.com/2019/day/3). We'll first solve the problem in a straightforward way, and then we'll improve the time and space complexity of our solution.
 
-## Part 1
+I encourage you to read the [full challenge](https://adventofcode.com/2019/day/3), but below is a condensed version. Our challenge is to identify intersections in two wires laid out in a plane:
 
-Specifically, two wires are connected to a central port and extend outward on a grid. You trace the path each wire takes as it leaves the central port, one wire per line of text (your puzzle input).
+> To fix the circuit, you need to find the intersection point closest to the central port. Because the wires are on a grid, use the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) for this measurement. While the wires do technically cross right at the central port where they both start, this point does not count, nor does a wire count as crossing with itself.
+>
+> ...
+>
+> (Part A) What is the Manhattan distance from the central port to the closest intersection?
+>
+> ...
+>
+> (Part B) What is the fewest combined steps the wires must take to reach an intersection?
 
-The wires twist and turn, but the two wires occasionally cross paths. To fix the circuit, you need to find the intersection point closest to the central port. Because the wires are on a grid, use the Manhattan distance for this measurement. While the wires do technically cross right at the central port where they both start, this point does not count, nor does a wire count as crossing with itself.
+Let's walk through a brief example to understand the problem.
 
-For example, if the first wire's path is R8,U5,L5,D3, then starting from the central port (o), it goes right 8, up 5, left 5, and finally down 3:
+## Example
 
-...........
-...........
-...........
-....+----+.
-....|....|.
-....|....|.
-....|....|.
-.........|.
-.o-------+.
-...........
+Let's say we have two wires as input, `R4,U4` and `U4,R4`:
 
-Then, if the second wire's path is U7,R6,D4,L4, it goes up 7, right 6, down 4, and left 4:
+```
+.......
+.+---X.
+.|...|.
+.|...|.
+.|...|.
+.o---+.
+.......
+```
 
-...........
-.+-----+...
-.|.....|...
-.|..+--X-+.
-.|..|..|.|.
-.|.-X--+.|.
-.|..|....|.
-.|.......|.
-.o-------+.
-...........
-These wires cross at two locations (marked X), but the lower-left one is closer to the central port: its distance is 3 + 3 = 6.
+Wire 1 has four pieces going right from the center `o` and four pieces up. Wire 2 has four pieces going up from the center `o` and four pieces right. The two wires intersect at the point `X`.
 
-Here are a few more examples:
+For Part A, we just need to calculate the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) from `o` to `X`, which is `4 + 4 = 8`. For Part B, each wire takes `4 + 4 = 8` steps to reach the intersection `X`, so the answer is `8 + 8 = 16`. The [full challenge](https://adventofcode.com/2019/day/3) has a few more examples you can check out.
 
-R75,D30,R83,U83,L12,D49,R71,U7,L72
-U62,R66,U55,R34,D71,R55,D58,R83 = distance 159
-R98,U47,R26,D63,R33,U87,L62,D20,R33,U53,R51
-U98,R91,D20,R16,D67,R40,U7,R15,U6,R7 = distance 135
-What is the Manhattan distance from the central port to the closest intersection?
+## First Solution
 
-## Part 2
-It turns out that this circuit is very timing-sensitive; you actually need to minimize the signal delay.
+First, let's try to solve the problem in a straightforward way. Once we understand the problem and the solution, we can optimize our code.
 
-To do this, calculate the number of steps each wire takes to reach each intersection; choose the intersection where the sum of both wires' steps is lowest. If a wire visits a position on the grid multiple times, use the steps value from the first time it visits that position when calculating the total value of a specific intersection.
+Let's assume that the input to our script is one file, with each wire on a separate line. Our data structure for a wire will be a `list`, where each item is a wire portion. Each wire portion will be another `list` including an X and Y coordinate. For example, for our first wire `R4,U4`, the wire will be represented as `[0, 0], [1, 0], [2, 0]... [4, 3], [4, 4]`.
 
-The number of steps a wire takes is the total number of grid squares the wire has entered to get to that location, including the intersection being considered. Again consider the example from above:
+The function to create a wire will have a list of steps in the wire, such as `['R4', 'U4']`. We'll create the wire by going through each step, determining the direction, and adding the wire portions to the list:
 
-...........
-.+-----+...
-.|.....|...
-.|..+--X-+.
-.|..|..|.|.
-.|.-X--+.|.
-.|..|....|.
-.|.......|.
-.o-------+.
-...........
-In the above example, the intersection closest to the central port is reached after 8+5+5+2 = 20 steps by the first wire and 7+6+4+3 = 20 steps by the second wire for a total of 20+20 = 40 steps.
-
-However, the top-right intersection is better: the first wire takes only 8+5+2 = 15 and the second wire takes only 7+6+2 = 15, a total of 15+15 = 30 steps.
-
-# First crack
 
 ```python
 # Return a wire data structure given a list of steps (from an input file)
@@ -90,7 +67,11 @@ def wireFromSteps(steps):
             wire.append(nextStep)
             lastStep = nextStep
     return wire
+```
 
+To create the wires from the file, we need a function to read the file, and split the text by newlines. We'll also need to split each line on the commas to pass the right input to `wireFromSteps`:
+
+```python
 # Return a list of wires from a file
 def wiresFromFile(filename):
     with open(filename) as f:
@@ -99,6 +80,11 @@ def wiresFromFile(filename):
             steps = [i.strip() for i in line.split(',')]
             wires.append(wireFromSteps(steps))
     return wires
+```
+
+next need to find intersections [^optimize]
+
+[^optimize]: if you're thinking there's a better way to do this, you're right! we'll get to that later in this post ^_^
 
 # Find all intersections between the two wires (except [0, 0])
 def findIntersections(wires):
@@ -129,6 +115,8 @@ def findClosestIntersection(wires):
 
     return firstClosest if firstClosest[0] < secondClosest[0] else secondClosest
 
+# Use example test from aoc
+
 # Part 1
 # Print closest intersection point
 print(findClosestDistance(findIntersections(wiresFromFile('in1.txt'))))
@@ -136,7 +124,9 @@ print(findClosestDistance(findIntersections(wiresFromFile('in1.txt'))))
 # Part 2
 # Print earliest intersection point by wire length as (length, point)
 print(findClosestIntersection(wiresFromFile('in1.txt')))
-```
+
+
+# use second examle/question to show that it takes too long, need to optimize
 
 # Second crack
 
@@ -219,3 +209,5 @@ print(findClosestIntersection(wires, intersections))
 
 - store wire1 as a dict { (point), dist }
 - iterate over every point in wire2 and check with wire1, rather than storing both
+
+_These solutions were developed by me and a few colleagues during an Algorithm Special Interest Group meeting hosted by [ChiPy](https://www.chipy.org/). If you're in the Chicago area and like Python, I'd recommend checking out their events!_
