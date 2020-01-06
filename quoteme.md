@@ -1,4 +1,4 @@
 ---
 Title: Purdue Quoteme
-redirect_to: https://murmuring-cliffs-48213.herokuapp.com/
+redirect_to: https://groupme-quotes-webapp.herokuapp.com/
 ---
