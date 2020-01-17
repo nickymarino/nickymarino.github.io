@@ -13,7 +13,7 @@ Boiler Up!
 
 [Code Your Dreams Curriculum](https://github.com/CodeYourDreams/Develop_Curriculum) teaches younger generations to think critically, creatively, and empathetically to build the applications of their dreams.
 
-[This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on anything from programming to LaTeX formatting.
+[This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on everything from programming to LaTeX formatting.
 
 My [GitHub page]({{ site.author.github }}) features more projects.
 

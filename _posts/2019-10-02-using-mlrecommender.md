@@ -377,5 +377,3 @@ Each of the files mentioned in this tutorial can be found [here](https://drive.g
 - `merged_listed_data_incremental_song_id.csv`: `merged_listed_data.csv` with incremental ids added
 - `songs_incremental_id.csv`: `songs.csv` with incremental ids added
 - `MusicRecommender.playground`: Swift Playground for creating the MLRecommender
-
-_This blog post was inspired by Eric Le's_ [How to build a simple song recommender system](https://towardsdatascience.com/how-to-build-a-simple-song-recommender-296fcbc8c85).
