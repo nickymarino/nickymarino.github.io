@@ -10,6 +10,7 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 # About/contact
 author:

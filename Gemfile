@@ -8,6 +8,7 @@ gem 'jekyll'
 gem 'jekyll-paginate'
 gem 'jemoji'
 gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'
 
 # Gems for Heroku dev preview support
 gem 'rake'

@@ -6,6 +6,13 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <!-- Metadata -->
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}"/>
+{% endif %}
+
+  <meta name="author" content="Nicky Marino"/>
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
