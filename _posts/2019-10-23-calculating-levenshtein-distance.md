@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculating a Levenshtein Distance in Python and Swift
+title: Calculating a Levenshtein Distance
 assets_folder: public/assets/2019/calculating-levenshtein-distance
 ---
 
