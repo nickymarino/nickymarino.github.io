@@ -28,7 +28,7 @@ OPTIONS:
         Wallpaper background as a hexcode. Use list-backgrounds to list predefined background names
 
     --foregrounds FOREGROUNDS
-        Wallpaper foregrounds as hexcodes separated by commans. Use list-foregrounds to list predefined f
+        Wallpaper foregrounds as hexcodes separated by commans. Use list-foregrounds to list predefined foreground names
 
     --width PIXELS
         Width of the wallpaper
