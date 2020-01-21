@@ -2,8 +2,8 @@
 
 // Fonts
 $font-stack-headings: 'Lora', Palatino, serif;
-$font-stack-body: Helvetica, Arial, sans-serif;
-$font-stack-mono: Menlo, Monaco, 'Courier New', monospace;
+$font-stack-body: $font-stack-headings;
+$font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
 
 // Theme colors
 $color-background: white;
