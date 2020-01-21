@@ -2,7 +2,7 @@
 title:               Nicky Marino
 tagline:             ''
 description:         'Nicky Marino'
-url:                 http://nickymarino.com
+url:                 https://nickymarino.com
 baseurl:             ''
 paginate:            15
 paginate-path:       'page:num'
@@ -15,7 +15,7 @@ plugins:
 # About/contact
 author:
   name:              Nicky Marino
-  url:               http://nickymarino.com
+  url:               https://nickymarino.com
   twitter:           https://twitter.com/_NickyMarino
   github:            https://github.com/nickymarino
 
