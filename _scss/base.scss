@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-stack-headings;
 }
 
+sup .footnote {
+  // No link underlining for footnote numbers
+  border-bottom: none;
+}
+
+
 /* Quotes */
 blockquote {
   padding: .5rem 1rem;
