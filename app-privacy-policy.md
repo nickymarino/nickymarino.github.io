@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Darkscreen Privacy Policy
+title: Privacy Policy
 ---
 
 ## Privacy Policy
@@ -17,7 +17,7 @@ We comply with the California Online Privacy Protection Act. We therefore will n
 
 ### Children’s Online Privacy Protection Act Compliance
 
-We never collect or maintain information at our website from those we actually know are under 13, and no part of our website is structured to attract anyone under 13.
+We never collect or maintain information at our website from those we actually know are under 13, and no part of our website or app is structured to attract anyone under 13.
 
 ### Information for European Union Customers
 
