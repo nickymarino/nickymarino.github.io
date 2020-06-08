@@ -3,6 +3,12 @@ layout: default
 ---
 
 <div class="page">
+  {% comment %}
+    Check whether we asked to hide the title for this page
+  {% endcomment %}
+  {% if page.hide_title.nil? %}
   <h1 class="page-title">{{ page.title }}</h1>
+  {% endif %}
+
   {{ content }}
 </div>

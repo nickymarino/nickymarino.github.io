@@ -4,7 +4,7 @@ tagline:             ''
 description:         'Nicky Marino'
 url:                 https://nickymarino.com
 baseurl:             ''
-paginate:            8
+paginate:            3
 paginate-path:       'page:num'
 plugins:
   - jekyll-paginate
@@ -19,8 +19,6 @@ author:
   twitter:           https://twitter.com/_NickyMarino
   github:            https://github.com/nickymarino
 
-twitter_feed:        https://twitter.com/NickyMarino_com
-
 # Permalinks
 permalink:           pretty
 
@@ -30,3 +28,6 @@ permalink:           pretty
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+twitter_feed:        https://twitter.com/NickyMarino_com
+source_url:          https://github.com/nickymarino/nickymarino.github.io

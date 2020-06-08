@@ -1,6 +1,31 @@
 @import "theme";
 @import "mixins";
 
-.footer p {
-    font-size: 0.9em;
+.footer {
+    a {
+        color: $color-primary;
+        font-size: 0.9em;
+
+        // Use the default link style, but with
+        // a lighter color and no underlining
+        @include default-link-style;
+        border-bottom: none;
+
+        // But still underline when highlighted
+        &:hover, &:focus, &:active {
+            @include default-link-style;
+        }
+    }
+
+    // Flex box
+    display: flex;
+    justify-content: space-evenly;
+
+    // Don't space the links all the way out
+    $footer-side-margin: 11em;
+    margin-left: $footer-side-margin;
+    margin-right: $footer-side-margin;
+
+    // Add some space at the bottom of any page
+    padding-bottom: 50px;
 }

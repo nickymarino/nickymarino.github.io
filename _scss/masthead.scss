@@ -23,7 +23,7 @@
     padding-top: .25em; // Align with masthead title
     float: right;
 
-    $separator-padding: 5px;
+    $separator-padding: 8px;
 
     li {
         float: left;
@@ -31,17 +31,9 @@
         padding-right: $separator-padding + $nav-separator-thickness;
         border-right: $nav-separator-thickness solid $color-link-line;
 
-        // vertical-align: bottom;
-
         a {
-            font-weight: bold;
-
-            // Hide underlines until hover
             @include default-link-style;
-            border-bottom: none;
-            &:hover, &:focus, &:active {
-                @include default-link-style;
-            }
+            font-weight: bold;
         }
     }
 

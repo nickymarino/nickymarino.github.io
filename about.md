@@ -1,21 +1,24 @@
 ---
 layout: page
 title: About
+hide_title: true
 ---
 
-I'm Nicky Marino, and I'm a patent engineer working at a law firm in downtown Chicago, IL. I grew up in the suburbs of Indianapolis and studied Computer Engineering at Purdue University. I have a passion for writing and teaching software development.
+# [Large Obvious GitHub Profile Link]({{ site.author.github }})
+<br>
+I'm Nicky Marino, and I'm an AI Engineer working at [ModelOp](https://www.modelop.com) to deploy, monitor, and govern machine learning models at scale. I grew up in the suburbs of Indianapolis and studied Computer Engineering at Purdue University. I have a passion for both writing and teaching software development.
 
 Boiler Up!
 
 ## Current Projects
 
-[Transit Talk](https://github.com/TransitTalk/Transit-Talk) is a web app built to improve overall transit user experience by connecting riders to each other and to the agencies that serve them.
+[Virgo] is a Ruby CLI tool to generate beautiful, starry wallpapers.
 
 [Code Your Dreams Curriculum](https://github.com/CodeYourDreams/Develop_Curriculum) teaches younger generations to think critically, creatively, and empathetically to build the applications of their dreams.
 
 [This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on everything from programming to LaTeX formatting.
 
-My [GitHub page]({{ site.author.github }}) features more projects.
+Checkout my [GitHub page]({{ site.author.github }}) for more projects.
 
 ## Past Projects
 
@@ -38,6 +41,6 @@ This website is:
 - Designed with a heavily-modified version of the [Lanyon](https://github.com/poole/lanyon) Jekyll site theme
 - Hosted on [GitHub Pages](https://pages.github.com)
 - Tested on [Heroku](https://www.heroku.com)
-- Written and maintained by [me]({{ site.author.twitter }})
+- Written and maintained by me
 
-For comments or questions, feel free to ask me on [GitHub]({{ site.author.github }}), [Twitter]({{ site.author.twitter }}), or via email at nicky.s.marino [at] gmail [dot] com.
+For comments or questions, feel free to ask me on [GitHub]({{ site.author.github }}) or via email at nicky.s.marino [at] gmail [dot] com.
