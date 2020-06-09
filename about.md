@@ -1,24 +1,21 @@
 ---
 layout: page
 title: About
-hide_title: true
 ---
 
-# [Large Obvious GitHub Profile Link]({{ site.author.github }})
-<br>
+Check out my [GitHub profile page]({{ site.author.github }}).
+
 I'm Nicky Marino, and I'm an AI Engineer working at [ModelOp](https://www.modelop.com) to deploy, monitor, and govern machine learning models at scale. I grew up in the suburbs of Indianapolis and studied Computer Engineering at Purdue University. I have a passion for both writing and teaching software development.
 
 Boiler Up!
 
 ## Current Projects
 
-[Virgo] is a Ruby CLI tool to generate beautiful, starry wallpapers.
+[Virgo](https://github.com/nickymarino/virgo) is a Ruby CLI tool to generate beautiful, starry wallpapers.
 
 [Code Your Dreams Curriculum](https://github.com/CodeYourDreams/Develop_Curriculum) teaches younger generations to think critically, creatively, and empathetically to build the applications of their dreams.
 
 [This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on everything from programming to LaTeX formatting.
-
-Checkout my [GitHub page]({{ site.author.github }}) for more projects.
 
 ## Past Projects
 

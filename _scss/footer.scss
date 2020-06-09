@@ -21,11 +21,7 @@
     display: flex;
     justify-content: space-evenly;
 
-    // Don't space the links all the way out
-    $footer-side-margin: 11em;
-    margin-left: $footer-side-margin;
-    margin-right: $footer-side-margin;
-
-    // Add some space at the bottom of any page
-    padding-bottom: 50px;
+    border-top: 1px solid $color-lighter;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
