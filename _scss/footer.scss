@@ -6,22 +6,24 @@
         color: $color-primary;
         font-size: 0.9em;
 
-        // Use the default link style, but with
-        // a lighter color and no underlining
-        @include default-link-style;
-        border-bottom: none;
+        @include reset-link-style;
 
-        // But still underline when highlighted
+        // Still underline when highlighted
         &:hover, &:focus, &:active {
             @include default-link-style;
         }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
     }
 
     // Flex box
     display: flex;
     justify-content: space-evenly;
 
-    border-top: 1px solid $color-lighter;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    border-top: 2px solid $color-secondary;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }

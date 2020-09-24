@@ -6,11 +6,12 @@ $font-stack-body: $font-stack-headings;
 $font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
 
 // Theme colors
-$color-background: white;
-$color-primary: black;
-$color-secondary: #fcd731;
+// https://coolors.co/000000-f7b32b-ffffff-e9e9ed
+$color-background: #ffffff;
+$color-primary: #000000;
+$color-secondary: #F7B32B;
 $color-light: #9a9a9a;
-$color-lighter: #eeeeee;
+$color-lighter: #E9E9ED;
 
 // Standard thickness for accents such as link
 // underlining and navbar separators
@@ -31,14 +32,14 @@ $nav-separator-thickness: 0;
 
 // Quotes
 $color-quote-text: $color-primary;
-$color-quote-border: #dcdcdc;
+$color-quote-border: $color-lighter;
 
 // Posts
 $color-post-date: $color-light;
 
 // Code
 $color-code: $color-primary;
-$color-code-background: #f9f9f9;
+$color-code-background: $color-lighter;
 
 // Alerts
 $color-alert-background: #fff3cd;

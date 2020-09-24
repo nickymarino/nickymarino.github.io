@@ -5,9 +5,7 @@ title: About
 
 Check out my [GitHub profile page]({{ site.author.github }}).
 
-I'm Nicky Marino, and I'm an AI Engineer working at [ModelOp](https://www.modelop.com) to deploy, monitor, and govern machine learning models at scale. I grew up in the suburbs of Indianapolis and studied Computer Engineering at Purdue University. I have a passion for both writing and teaching software development.
-
-Boiler Up!
+I'm Nicky Marino, and I'm an AI Engineer at [ModelOp](https://www.modelop.com) helping enterprise businesses deploy, monitor, and govern machine learning models at scale. I grew up in the suburbs of Indianapolis and studied Computer Engineering at Purdue University. I love teaching, and I publish technical posts here to help others learn software development.
 
 ## Current Projects
 
@@ -15,7 +13,7 @@ Boiler Up!
 
 [Code Your Dreams Curriculum](https://github.com/CodeYourDreams/Develop_Curriculum) teaches younger generations to think critically, creatively, and empathetically to build the applications of their dreams.
 
-[This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on everything from programming to LaTeX formatting.
+[This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on everything from cool new Python operators to LaTeX formatting.
 
 ## Past Projects
 
@@ -25,9 +23,9 @@ I implemented an efficient, reliable method to read and edit RFID tags with a [T
 
 I designed and managed an automated system to collect, parse, and store NOAA weather reports on a daily basis for [Consumers Energy](https://www.consumersenergy.com).
 
-I built the CMS for [Phoenix Club](https://github.com/nickymarino/phoenixclub) to manage the attendance records of nearly 100 students at weekly meetings.
-
 I worked with a team of 3 other students to build an ASIC [RC4/SD Card encryption](https://github.com/nickymarino/ece337project) design.
+
+I built the CMS for [Phoenix Club](https://github.com/nickymarino/phoenixclub) to manage the attendance records of nearly 100 students at weekly meetings.
 
 ## About the Site
 
