@@ -3,9 +3,8 @@ layout: post
 title: Optimizing Virgo Using NArray
 description: How to improve the runtime Virgo using Ruby NArray
 image_folder: 2020/optimizing-virgo
+cover_image: 2020/optimizing-virgo/example_11.png
 ---
-
-![Virgo Example Output]({% include _functions/image_path.html name='example_11.png' %}){: .center}
 
 [Earlier this week]({{ site.baseurl }}/2020/01/19/virgo-wallpaper-generator/), I had released [Virgo](https://github.com/nickymarino/virgo), a Ruby CLI to generate wallpapers (including the one above). My goal was to be able to create beautiful OLED wallpapers for my phone, but unfortunately, the first version of Virgo would take about 15 seconds to generate a wallpaper the size of an iPhone 11. The first version of Virgo used [`ChunkyPNG::Image`](https://www.rubydoc.info/github/wvanbergen/chunky_png/ChunkyPNG/Image) to place pixels on the background, and the author of ChunkyPNG alludes to this possible problem [in his README](https://github.com/wvanbergen/chunky_png):
 
