@@ -6,9 +6,9 @@ $font-stack-body: $font-stack-headings;
 $font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
 
 // Theme colors
-$color-background: white;
-$color-primary: black;
-$color-secondary: #fcd731;
+$color-background: #ffffff;
+$color-primary: #000000;
+$color-secondary: #F7B32B;
 $color-light: #9a9a9a;
 $color-lighter: #eeeeee;
 
@@ -38,7 +38,7 @@ $color-post-date: $color-light;
 
 // Code
 $color-code: $color-primary;
-$color-code-background: #f9f9f9;
+$color-code-background: #E9E9ED;
 
 // Alerts
 $color-alert-background: #fff3cd;
