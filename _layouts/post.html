@@ -8,19 +8,3 @@ layout: default
   {% if page.cover_image %}<img src="{{ site.base_url }}/public/assets/{{ page.cover_image }}" alt="{{ page.title }} Cover Image" class="center">{% else %}{% endif %}
   {{ content }}
 </div>
-
-<div class="related">
-  <!-- Jekyll calls these site.related_posts but it's really recent posts -->
-  <h2>Recent Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3 style="font-weight: normal;">
-          <small>{{ post.date | date_to_string }}</small>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <br />
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>

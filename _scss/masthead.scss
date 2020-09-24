@@ -4,16 +4,20 @@
 .masthead {
     font-family: $font-stack-headings;
     padding-top:    1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 2px solid $color-secondary;
+}
+
+// No decoration for any header links
+.masthead a {
+    @include default-link-style;
+    text-decoration: none;
 }
 
 .masthead-title {
     line-height: inherit;
     float: left;
-
-    a {
-        @include default-link-style;
-    }
 }
 
 .masthead-links {
@@ -30,10 +34,6 @@
         padding-left: $separator-padding;
         padding-right: $separator-padding + $nav-separator-thickness;
         border-right: $nav-separator-thickness solid $color-link-line;
-
-        a {
-            @include default-link-style;
-        }
     }
 
     li:first-child {

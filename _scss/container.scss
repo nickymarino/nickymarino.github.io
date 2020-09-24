@@ -1,6 +1,12 @@
 @import "theme";
 @import "mixins";
 
+// Raise the top of the container to meet the header
+.container {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+
 // Links
 
 .container a,

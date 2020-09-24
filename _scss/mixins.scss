@@ -2,9 +2,11 @@
 
 @mixin default-link-style {
     color: $color-link-text;
-    text-decoration: none;
-    border-bottom: $link-underline-thickness solid $color-link-line;
+    text-decoration: underline;
+    text-decoration-color: $color-link-line;
+    text-decoration-thickness: 2px;
+}
 
-    // Leave some space for hanging letters (g, j, p, etc.)
-    padding-bottom: 1px;
+@mixin reset-link-style {
+    text-decoration: none;
 }
