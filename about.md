@@ -3,39 +3,12 @@ layout: page
 title: About
 ---
 
-Check out my [GitHub profile page]({{ site.author.github }}).
+Hi! I'm Nicky Marino. This site is dedicated to my thoughts on software development.
 
-I'm Nicky Marino, and I'm an AI Engineer at [ModelOp](https://www.modelop.com) helping enterprise businesses deploy, monitor, and govern machine learning models at scale. I grew up in the suburbs of Indianapolis and studied Computer Engineering at Purdue University. I love teaching, and I publish technical posts here to help others learn software development.
+I'm an AI Engineer at [ModelOp](https://www.modelop.com) enabling enterprise businesses to deploy, monitor, and govern machine learning models at scale.
 
-## Current Projects
+In my free time, I like to lift heavy things, [read](https://www.goodreads.com/user/show/71810120-nicky), [play](https://dodgeroll.com/gungeon/) [rogue-lites](https://www.supergiantgames.com/games/hades/), and learn new technologies.
 
-[Virgo](https://github.com/nickymarino/virgo) is a Ruby CLI tool to generate beautiful, starry wallpapers.
+I built this site using [Jekyll](https://jekyllrb.com/), [Lanyon](https://github.com/poole/lanyon), and [VS Code](https://code.visualstudio.com). It is written in [Markdown](https://daringfireball.net/projects/markdown/), typeset in [Lora](https://fonts.google.com/specimen/Lora), and hosted on [GitHub Pages](https://pages.github.com).
 
-[Code Your Dreams Curriculum](https://github.com/CodeYourDreams/Develop_Curriculum) teaches younger generations to think critically, creatively, and empathetically to build the applications of their dreams.
-
-[This site](https://github.com/nickymarino/nickymarino.github.io) has posts detailing my thoughts and tips on everything from cool new Python operators to LaTeX formatting.
-
-## Past Projects
-
-I was the Head Teaching Assistant for [Purdue Honors Engineering](https://engineering.purdue.edu/Honors), where we covered a variety of topics including teamwork, project management, scripting, and solving real world problems. I lead the software team of ~10 colleagues to automatically collect, grade, and report homework submissions for over 300 students weekly.
-
-I implemented an efficient, reliable method to read and edit RFID tags with a [TI MSP430](http://www.ti.com/microcontrollers/msp430-ultra-low-power-mcus/overview.html) microcontroller and a Node frontend for [Indesign, LLC](https://indesign-llc.com).
-
-I designed and managed an automated system to collect, parse, and store NOAA weather reports on a daily basis for [Consumers Energy](https://www.consumersenergy.com).
-
-I worked with a team of 3 other students to build an ASIC [RC4/SD Card encryption](https://github.com/nickymarino/ece337project) design.
-
-I built the CMS for [Phoenix Club](https://github.com/nickymarino/phoenixclub) to manage the attendance records of nearly 100 students at weekly meetings.
-
-## About the Site
-
-This website is:
-
-- Coded with [VS Code](https://code.visualstudio.com)
-- Built on [Jekyll](https://jekyllrb.com/), the open source static site generator
-- Designed with a heavily-modified version of the [Lanyon](https://github.com/poole/lanyon) Jekyll site theme
-- Hosted on [GitHub Pages](https://pages.github.com)
-- Tested on [Heroku](https://www.heroku.com)
-- Written and maintained by me
-
-For comments or questions, feel free to ask me on [GitHub]({{ site.author.github }}) or via email at nicky.s.marino [at] gmail [dot] com.
+You can contact me via [email](mailto:{{ site.author.email }}) or on [GitHub]({{ site.author.github }}).

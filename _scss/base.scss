@@ -7,6 +7,11 @@
 @import "masthead";
 @import "post";
 
+// Set height for sticky footer flex box
+html, body {
+  height: 100%;
+}
+
 html {
   font-family: $font-stack-body;
 }
@@ -14,6 +19,10 @@ html {
 body {
     font-family: $font-stack-body;
     color: $color-text;
+
+    // Create a flex column for the sticky footer vs the content container
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
