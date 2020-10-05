@@ -2,6 +2,17 @@
 @import "mixins";
 
 .footer {
+    // Vertical flex box for sticky footer
+    flex-shrink: 0;
+
+    // Horizontal flex box for links
+    display: flex;
+    justify-content: space-evenly;
+
+    border-top: 2px solid $color-secondary;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
     a {
         color: $color-primary;
         font-size: 0.9em;
@@ -18,12 +29,4 @@
         margin: 0;
         padding: 0;
     }
-
-    // Flex box
-    display: flex;
-    justify-content: space-evenly;
-
-    border-top: 2px solid $color-secondary;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }

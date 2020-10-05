@@ -17,33 +17,6 @@
 
 
 /*
- * Contents
- *
- * Global resets
- * Masthead
- * Sidebar
- * Slide effect
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */
-
-/* Prevent scroll on narrow devices */
-html,
-body {
-  overflow-x: hidden;
-}
-
-
-/*
  * Masthead
  *
  * Super small header above the content for site name and short description.

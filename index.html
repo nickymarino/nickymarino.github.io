@@ -6,6 +6,8 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
+    {% if post.cover_image %}<img src="{{ site.base_url }}/public/assets/{{ post.cover_image }}" alt="{{ post.title }} Cover Image" class="center">{% else %}{% endif %}
+
     <h1 class="post-title">
     {% if post.external_link %}
       <a href="{{ post.external_link }}">{% include link-icon.html %}</a>
@@ -14,8 +16,6 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {% if post.cover_image %}<img src="{{ site.base_url }}/public/assets/{{ post.cover_image }}" alt="{{ post.title }} Cover Image" class="center">{% else %}{% endif %}
 
     {{ post.content }}
   </div>

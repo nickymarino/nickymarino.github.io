@@ -16,8 +16,9 @@ plugins:
 author:
   name:              Nicky Marino
   url:               https://nickymarino.com
-  twitter:           https://twitter.com/_NickyMarino
   github:            https://github.com/nickymarino
+  email:             nicky.s.marino@gmail.com
+  twitter:           https://twitter.com/_NickyMarino
 
 # Permalinks
 permalink:           pretty
