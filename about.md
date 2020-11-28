@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Nicky Marino - About
 ---
 
 Hi! I'm Nicky Marino. This site is dedicated to my thoughts on software development. You can contact me via [email](mailto:{{ site.author.email }}), on [GitHub]({{ site.author.github }}), or on [LinkedIn]({{ site.author.linkedin }}).
