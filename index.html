@@ -6,7 +6,7 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    {% if post.cover_image %}<img src="{{ site.base_url }}/public/assets/{{ post.cover_image }}" alt="{{ post.title }} Cover Image" class="center">{% else %}{% endif %}
+    {% if post.cover_image %}<img src="{{ site.url }}/public/assets/{{ post.cover_image }}" alt="{{ post.title }} Cover Image" class="center">{% else %}{% endif %}
 
     <h1 class="post-title">
     {% if post.external_link %}

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post">
-  {% if page.cover_image %}<img src="{{ site.base_url }}/public/assets/{{ page.cover_image }}" alt="{{ page.title }} Cover Image" class="center">{% else %}{% endif %}
+  {% if page.cover_image %}<img src="{{ site.url }}/public/assets/{{ page.cover_image }}" alt="{{ page.title }} Cover Image" class="center">{% else %}{% endif %}
   {% include post-title.html %}
   {% include post-date.html %}
   {{ content }}
