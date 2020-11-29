@@ -1,15 +1,23 @@
   <!-- Open Graph markup for link previews -->
   <meta name="author" content="Nicky Marino"/>
-  <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+{% if page.title == "Home" or page.title == "Archive" or page.title == "About" %}
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
+{% else %}
+  <meta property="og:title" content="{{ page.title }}" />
+{% endif %}
+
 {% if post %}
   <meta property="og:type" content="article" />
 {% else %}
   <meta property="og:type" content="website" />
 {% endif %}
+
 {% if page.description %}
   <meta property="og:description" content="{{ page.description }}"/>
 {% endif %}
+
 {% if page.cover_image %}
   <meta property="og:image" content="{{ site.url }}/public/assets/{{ page.cover_image }}" />
 {% else %}
@@ -18,11 +26,17 @@
 
   <!-- Twitter Card markup -->
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+
+{% if page.title == "Home" or page.title == "Archive" or page.title == "About" %}
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}" />
+{% else %}
   <meta name="twitter:title" content="{{ page.title }}" />
+{% endif %}
+
 {% if page.description %}
   <meta name="twitter:description" content="{{ page.description }}" />
 {% endif %}
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 {% if page.cover_image %}
   <meta name="twitter:image" content="{{ site.url }}/public/assets/{{ page.cover_image }}" />
 {% else %}
