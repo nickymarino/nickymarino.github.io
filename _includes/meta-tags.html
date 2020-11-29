@@ -25,8 +25,10 @@
 {% endif %}
 
   <!-- Twitter Card markup -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+  <meta nam="twitter:site" content="{{ site.author.twitter.site }}" />
+  <meta nam="twitter:creator" content="{{ site.author.twitter.creator }}" />
 
 {% if page.title == "Home" or page.title == "Archive" or page.title == "About" %}
   <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}" />
