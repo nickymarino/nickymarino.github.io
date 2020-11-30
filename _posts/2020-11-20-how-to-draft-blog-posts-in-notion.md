@@ -8,7 +8,9 @@ image_folder: 2020/notion-drafts-how-to
 
 Maintaining a streamlined process to draft, edit, and publish technical articles can be tricky. For example, I write across multiple topics such as [Python tutorials](https://nickymarino.com/2020/09/29/python-list-comprehensions/), [bash commands](https://nickymarino.com/2020/09/06/multiple-aws-profiles/), and [Ruby optimizations](https://nickymarino.com/2020/01/21/optimizing-virgo/). I also publish to three different locations—my [website](https://nickymarino.com), [dev.to](https://dev.to/nickymarino), and [Hashnode](https://nickymarino.hashnode.dev), so I write my posts in Markdown-friendly tools for cross compatibility.
 
-[Notion](https://www.notion.so/personal) is a great tool for drafting blog posts, technical or otherwise. Notion has an entire suite of tools to make drafting easy: Markdown exports, page properties and filters, a beautiful interface, and many more. With Notion, I quickly draft articles, publish each one across multiple sites, and monitor each article's progress at a glance.
+[Notion](https://www.notion.so/personal) is a great tool for drafting blog posts, technical or otherwise. Notion has an entire suite of tools to make drafting easy: Markdown exports, page properties and filters, a beautiful interface, and many more. With Notion, I quickly draft articles, publish each one across multiple sites, and monitor each article's progress at a glance. Here's what my setup looks like:
+
+![Gallery View of My Blog Posts]({% include _functions/image_path.html name='Untitled 2.png' %}){: .center}
 
 In this article, we will walk through creating an Articles page in Notion. We'll create:
 
