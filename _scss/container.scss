@@ -29,8 +29,7 @@
 
 .container code.highlighter-rouge {
     // ONLY inline code directly has the highlighter-rouge class
-    // border: 2px solid $E9E9ED;
-    background-color: $color-code-background;
+    background: $color-background-light;
     border-radius: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
