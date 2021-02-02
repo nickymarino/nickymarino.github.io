@@ -1,30 +1,31 @@
 /* Theme elements */
 
-// Fonts
+//// Fonts ////
 $font-stack-headings: 'Lora', Palatino, serif;
 $font-stack-body: $font-stack-headings;
 $font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
 
-// Theme colors
-// https://coolors.co/0e111a-e8eded-ffb600-0049ff-fc60a8
-$color-background: #0E111A;
-$color-primary: #E8EDED;
-$color-secondary: #FFB600;
-$color-lighter: #E9E9ED;
-
-// Posts
-$color-post-date: #9a9a9a;
-
-// Alerts
-$color-alert-background: $color-background;
-$color-alert-border: #7B88B7;
-$color-alert-content: #7B88B7;
-
+//// Thicknesses ////
 // Standard thickness for accents such as link
 // underlining and navbar separators
 $accent-thickness: 2px;
+// Navbar thickness
+$nav-separator-thickness: 0;
 
-/* Map theme to site elements */
+//// Colors ////
+// https://coolors.co/131516-de4d86-fea82f-d8ddde-008dd5
+$color-background: #131516;
+$color-primary: #D8DDDE;
+$color-secondary: #FEA82F;
+
+// Posts
+$color-background-light: lighten($color-background, 12%);
+$color-post-date: lighten($color-background, 45%);
+
+// Alerts
+$color-alert-background: $color-background;
+$color-alert-border: $color-post-date;
+$color-alert-content: $color-post-date;
 
 // Base
 $color-text: $color-primary;
@@ -34,13 +35,10 @@ $link-underline-thickness: $accent-thickness;
 $color-link-text: $color-primary;
 $color-link-line: $color-secondary;
 
-// Navbar
-$nav-separator-thickness: 0;
-
 // Quotes
 $color-quote-text: $color-primary;
-$color-quote-border: $color-lighter;
+$color-quote-border: $color-background-light;
 
 // Code
 $color-code: $color-primary;
-$color-code-background: $color-lighter;
+$color-code-background: $color-background-light;
