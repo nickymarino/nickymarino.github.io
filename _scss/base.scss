@@ -19,6 +19,7 @@ html {
 body {
     font-family: $font-stack-body;
     color: $color-text;
+    background-color: $color-background;
 
     // Create a flex column for the sticky footer vs the content container
     display: flex;

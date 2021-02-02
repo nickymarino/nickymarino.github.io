@@ -6,12 +6,19 @@ $font-stack-body: $font-stack-headings;
 $font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
 
 // Theme colors
-// https://coolors.co/000000-f7b32b-ffffff-e9e9ed
-$color-background: #ffffff;
-$color-primary: #000000;
-$color-secondary: #F7B32B;
-$color-light: #9a9a9a;
+// https://coolors.co/0e111a-e8eded-ffb600-0049ff-fc60a8
+$color-background: #0E111A;
+$color-primary: #E8EDED;
+$color-secondary: #FFB600;
 $color-lighter: #E9E9ED;
+
+// Posts
+$color-post-date: #9a9a9a;
+
+// Alerts
+$color-alert-background: $color-background;
+$color-alert-border: #7B88B7;
+$color-alert-content: #7B88B7;
 
 // Standard thickness for accents such as link
 // underlining and navbar separators
@@ -34,15 +41,6 @@ $nav-separator-thickness: 0;
 $color-quote-text: $color-primary;
 $color-quote-border: $color-lighter;
 
-// Posts
-$color-post-date: $color-light;
-
 // Code
 $color-code: $color-primary;
 $color-code-background: $color-lighter;
-
-// Alerts
-$color-alert-background: #fff3cd;
-$color-alert-border: #ffeeba;
-$color-alert-content: #b3890b;
-
