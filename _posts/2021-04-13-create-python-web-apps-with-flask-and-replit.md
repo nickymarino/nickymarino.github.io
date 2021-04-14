@@ -16,19 +16,19 @@ Before following these steps, you must first create an account on [replit](repli
 
 First, let's create a blank Python project. On your [replit](replit.com) homepage, create new project by clicking “Python" under the "Create" heading:
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(9).png' %}){: .center}
+![Replit homepage with the "Python" button highlighted]({% include _functions/image_path.html name='Image%20(9).png' %}){: .center}
 
 For the project name, type `my-first-flask-site` and click "Create repl”:
 
-![CHANGEME]({% include _functions/image_path.html name='Image.jpeg' %}){: .center}
+![Example showing creating a new Python repl]({% include _functions/image_path.html name='Image.jpeg' %}){: .center}
 
 Your new project will automatically create a file named `main.py` and open a Python IDLE for you, but we need to install Flask before we can start writing our app. On the left sidebar, click the "Packages" icon, which looks like a hexagonal box:
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(8).png' %}){: .center}
+![Repl editor with the "Packages" icon highlighted]({% include _functions/image_path.html name='Image%20(8).png' %}){: .center}
 
 From here, we can install any Python packages that you want to import in your app. Install the Flask package by typing “flask” and selecting the first item from the list named "Flask":
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(7).png' %}){: .center}
+![Repl editor with the "Flask" item highlighted]({% include _functions/image_path.html name='Image%20(7).png' %}){: .center}
 
 Then, click the “Files” icon on the left sidebar to go back to the files list. You should see `main.py`, which was already created for you.
 
@@ -68,7 +68,7 @@ We’ll use `render_template`, `template_folder`, and `static_folder` later in t
 
 Now, click the green “Run” button at the top of the page. Replit should install Flask, then open a browser with your first Flask app!
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(6).png' %}){: .center}
+![Repl editor showing the Flask app running]({% include _functions/image_path.html name='Image%20(6).png' %}){: .center}
 
 The bottom right window is the Python console, and will show any error messages or logs that are printed.
 
@@ -76,7 +76,7 @@ At any time, you can click the “Stop” button at the top and click “Run” 
 
 Sometimes, your app might have multiple pages. To go to a different URL (or `@app.route`) in your app, click the icon “Open in a new tab" on the browser window. It will be to the right of the address bar:
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(5).png' %}){: .center}
+![Repl editor with the "Open in a new tab" button highlighted]({% include _functions/image_path.html name='Image%20(5).png' %}){: .center}
 
 You can type in a new path in the address bar of the new tab, such as [`https://my-first-flask-site.YOUR_USERNAME.repl.co/my-second-page`](https://my-first-flask-site.songsblade.repl.co/my-second-page). Right now, your server will return a 404 for that page because it doesn't exist.
 
@@ -101,7 +101,7 @@ Now let’s create the `templates` folder and create an `index.html` file. Next 
 
 Your editor should now look like this (note that there’s two tabs in the editor now: one for `templates/index.html` and one for `main.py`):
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(4).png' %}){: .center}
+![Repl editor with the index and main tabs both open]({% include _functions/image_path.html name='Image%20(4).png' %}){: .center}
 
 Copy the below code into the `templates/index.html` file:
 
@@ -147,7 +147,7 @@ if __name__ == '__main__':
 
 Click the Refresh button in the browser window of the project (**not** the refresh button in Chrome or Firefox, but the refresh button for the smaller window in your project), and you should see the contents of your index page with a large header:
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(3).png' %}){: .center}
+![Repl editor showing the web app's new large header]({% include _functions/image_path.html name='Image%20(3).png' %}){: .center}
 
 ## Adding CSS Styling
 
@@ -175,7 +175,7 @@ Click `main.py` on the Files list, then click the “Add a folder” icon to the
 
 Your project should now look like this:
 
-![CHANGEME]({% include _functions/image_path.html name='Image%20(2).png' %}){: .center}
+![Repl editor showing current state of the project]({% include _functions/image_path.html name='Image%20(2).png' %}){: .center}
 
 Let’s write some CSS to change the color of the “Welcome” message to red. Add the following code to your `static/style.css` file:
 
@@ -187,7 +187,7 @@ p {
 
 Click the Refresh button in the project browser window (**not** the refresh button in Chrome or Firefox, but the refresh button for the smaller window in your project), and the “Welcome" screen will turn red:
 
-![CHANGEME]({% include _functions/image_path.html name='Image.png' %}){: .center}
+![Repl editor showing the web app's new red text]({% include _functions/image_path.html name='Image.png' %}){: .center}
 
 Congratulations, you’ve written your very first Flask app!
 
