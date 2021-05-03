@@ -1,4 +1,5 @@
 @import "theme";
+@import "typography";
 
 @import "alert";
 @import "container";
@@ -12,32 +13,43 @@ html, body {
   height: 100%;
 }
 
-html {
-  font-family: $font-stack-body;
-}
-
 body {
-    font-family: $font-stack-body;
-    color: $color-text;
-    background-color: $color-background;
+  @include typography-body1;
+  color: $color-text;
+  background-color: $color-background;
 
-    // Create a flex column for the sticky footer vs the content container
-    display: flex;
-    flex-direction: column;
+  // Create a flex column for the sticky footer vs the content container
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    font-weight: bold;
-    line-height: 1.25;
-    font-family: $font-stack-headings;
     color: $color-text;
     text-rendering: optimizeLegibility;
 }
 
-.lead {
-  font-family: $font-stack-headings;
+h1 {
+  @include typography-headline1;
+}
+
+h2 {
+  @include typography-headline2;
+}
+
+h3 {
+  @include typography-headline3;
+}
+
+h4 {
+  @include typography-headline4;
+}
+
+h5 {
+  @include typography-headline5;
+}
+
+h6 {
+  @include typography-headline6;
 }
 
 sup .footnote {

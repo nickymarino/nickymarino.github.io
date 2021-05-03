@@ -9,12 +9,12 @@
     display: flex;
     justify-content: space-evenly;
 
-    border-top: 2px solid $color-secondary;
+    border-top: 2px solid $color-primary;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 
     a {
-        color: $color-primary;
+        color: $color-on-background;
         font-size: 0.9em;
 
         @include reset-link-style;

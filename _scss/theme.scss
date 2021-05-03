@@ -1,11 +1,5 @@
 /* Theme elements */
 
-//// Fonts ////
-// TODO:
-$font-stack-headings: 'Lora', Palatino, serif;
-$font-stack-body: $font-stack-headings, sans-serif;
-$font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
-
 //// Thicknesses ////
 // Standard thickness for accents such as link
 // underlining and navbar separators
@@ -16,12 +10,12 @@ $nav-separator-thickness: 0;
 //// Colors ////
 // Material dark theme: https://material.io/design/color/dark-theme.html#ui-application
 $color-background: #121212;
-$color-primary: #FFFFFF;
-$color-secondary: #FFECB3;
+$color-on-background: rgba(#FFFFFF, 0.87);
+$color-primary: #FFD54F;
 
 // Posts
 $color-background-light: rgba(white, 0.12);  // Material 08dp white overlay
-$color-post-date: rgba($color-primary, 0.6);  // Material medium emphasis color: 60% opacity
+$color-post-date: rgba($color-on-background, 0.6);  // Material medium emphasis color: 60% opacity
 
 // Alerts
 $color-alert-background: $color-background;
@@ -29,17 +23,17 @@ $color-alert-border: $color-post-date;
 $color-alert-content: $color-post-date;
 
 // Base
-$color-text: $color-primary;
+$color-text: $color-on-background;
 
 // Links
 $link-underline-thickness: $accent-thickness;
-$color-link-text: $color-primary;
-$color-link-line: $color-secondary;
+$color-link-text: $color-on-background;
+$color-link-line: $color-primary;
 
 // Quotes
-$color-quote-text: $color-primary;
+$color-quote-text: $color-on-background;
 $color-quote-border: $color-background-light;
 
 // Code
-$color-code: $color-primary;
+$color-code: $color-on-background;
 $color-code-background: $color-background-light;

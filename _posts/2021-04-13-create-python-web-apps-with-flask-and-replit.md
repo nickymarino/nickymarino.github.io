@@ -6,7 +6,7 @@ cover_image: 2021/flask-and-replit/flask-replit-logo.png
 image_folder: 2021/flask-and-replit
 ---
 
-_This tutorial was originally written for [Code Your Dreams](https://www.codeyourdreams.org), an incubator of youth voice, tech skills, and social justice. Their project-based and student-centered programs enable youth to be the change makers we know they are through code. To find out how to get involved, visit their website: [https://www.codeyourdreams.org](https://www.codeyourdreams.org)_
+_This tutorial was originally written for [Code Your Dreams](https://www.codeyourdreams.org), an incubator of youth voice, tech skills, and social justice. Their project-based and student-centered programs enable youth to be the change makers we know they are through code. To find out how to get involved, visit their website [here](https://www.codeyourdreams.org)._
 
 [Replit](https://repl.it) is a free, collaborative, in-browser IDE for creating new projects without setting up any environments on your computer. With Replit, you don't need to "deploy" your projects to any service; they'll be instantly available to you as soon as you start typing. In this post, we'll review how to create a Flask app, set up folders for HTML and CSS templates, and learn how to navigate your Flask app.
 
