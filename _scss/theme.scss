@@ -1,8 +1,9 @@
 /* Theme elements */
 
 //// Fonts ////
+// TODO:
 $font-stack-headings: 'Lora', Palatino, serif;
-$font-stack-body: $font-stack-headings;
+$font-stack-body: $font-stack-headings, sans-serif;
 $font-stack-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;
 
 //// Thicknesses ////
@@ -13,14 +14,14 @@ $accent-thickness: 2px;
 $nav-separator-thickness: 0;
 
 //// Colors ////
-// https://coolors.co/131516-de4d86-fea82f-d8ddde-008dd5
-$color-background: #131516;
-$color-primary: #D8DDDE;
-$color-secondary: #FEA82F;
+// Material dark theme: https://material.io/design/color/dark-theme.html#ui-application
+$color-background: #121212;
+$color-primary: #FFFFFF;
+$color-secondary: #FFECB3;
 
 // Posts
-$color-background-light: lighten($color-background, 12%);
-$color-post-date: lighten($color-background, 45%);
+$color-background-light: rgba(white, 0.12);  // Material 08dp white overlay
+$color-post-date: rgba($color-primary, 0.6);  // Material medium emphasis color: 60% opacity
 
 // Alerts
 $color-alert-background: $color-background;

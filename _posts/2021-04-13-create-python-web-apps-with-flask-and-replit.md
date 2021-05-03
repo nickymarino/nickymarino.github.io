@@ -22,7 +22,7 @@ For the project name, type `my-first-flask-site` and click "Create repl”:
 
 ![Example showing creating a new Python repl]({% include _functions/image_path.html name='Image.jpeg' %}){: .center}
 
-Your new project will automatically create a file named `main.py` and open a Python IDLE for you, but we need to install Flask before we can start writing our app. On the left sidebar, click the "Packages" icon, which looks like a hexagonal box:
+Your new project will automatically create a file named `main.py` and open a Python IDE for you, but we need to install Flask before we can start writing our app. On the left sidebar, click the "Packages" icon, which looks like a hexagonal box:
 
 ![Repl editor with the "Packages" icon highlighted]({% include _functions/image_path.html name='Image%20(8).png' %}){: .center}
 
