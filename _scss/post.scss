@@ -1,9 +1,14 @@
 @import "theme";
+@import "typography";
 @import "mixins";
 
 .post-title {
-    font-family: $font-stack-headings;
+    @include typography-headline1;
     font-weight: 700;
+
+    h1 {
+        padding-bottom: -10px;
+    }
 
     a {
         @include reset-link-style;
@@ -11,7 +16,7 @@
 }
 
 .post-date {
-    font-family: $font-stack-headings;
+    @include typography-subtitle1;
     letter-spacing: -0.01em;
     color: $color-post-date;
 }

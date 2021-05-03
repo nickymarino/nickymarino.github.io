@@ -1,0 +1,73 @@
+/* Typography */
+
+// Material typography: https://material.io/design/typography/the-type-system.html#type-scale
+
+$typography-lato-stack: "Lato", sans-serif;
+$typography-roboto-stack: "Roboto", sans-serif;
+
+@mixin typography-headline1 {
+  font-family: $typography-lato-stack;
+  font-size: 100;
+}
+
+@mixin typography-headline2 {
+  font-family: $typography-lato-stack;
+  font-size: 62;
+}
+
+@mixin typography-headline3 {
+  font-family: $typography-lato-stack;
+  font-size: 50;
+}
+
+@mixin typography-headline4 {
+  font-family: $typography-lato-stack;
+  font-size: 35;
+}
+
+@mixin typography-headline5 {
+  font-family: $typography-lato-stack;
+  font-size: 25;
+}
+
+@mixin typography-headline6 {
+  font-family: $typography-lato-stack;
+  font-size: 21;
+}
+
+@mixin typography-body1 {
+  font-family: $typography-roboto-stack;
+  font-size: 16;
+}
+
+@mixin typography-body2 {
+  font-family: $typography-roboto-stack;
+  font-size: 14;
+}
+
+@mixin typography-subtitle1 {
+  font-family: $typography-lato-stack;
+  font-size: 17;
+}
+
+@mixin typography-subtitle2 {
+  font-family: $typography-lato-stack;
+  font-size: 15;
+}
+
+@mixin typography-button {
+  font-family: $typography-roboto-stack;
+  font-size: 14;
+}
+
+@mixin typography-overline {
+  font-family: $typography-roboto-stack;
+  font-size: 10;
+}
+
+@mixin typography-caption {
+  font-family: $typography-roboto-stack;
+  font-size: 12;
+}
+
+$typography-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;

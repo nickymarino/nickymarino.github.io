@@ -6,7 +6,7 @@ cover_image: 2021/flask-and-replit/flask-replit-logo.png
 image_folder: 2021/flask-and-replit
 ---
 
-_This tutorial was originally written for [Code Your Dreams](https://www.codeyourdreams.org), an incubator of youth voice, tech skills, and social justice. Their project-based and student-centered programs enable youth to be the change makers we know they are through code. To find out how to get involved, visit their website: [https://www.codeyourdreams.org](https://www.codeyourdreams.org)_
+_This tutorial was originally written for [Code Your Dreams](https://www.codeyourdreams.org), an incubator of youth voice, tech skills, and social justice. Their project-based and student-centered programs enable youth to be the change makers we know they are through code. To find out how to get involved, visit their website [here](https://www.codeyourdreams.org)._
 
 [Replit](https://repl.it) is a free, collaborative, in-browser IDE for creating new projects without setting up any environments on your computer. With Replit, you don't need to "deploy" your projects to any service; they'll be instantly available to you as soon as you start typing. In this post, we'll review how to create a Flask app, set up folders for HTML and CSS templates, and learn how to navigate your Flask app.
 
@@ -22,7 +22,7 @@ For the project name, type `my-first-flask-site` and click "Create repl”:
 
 ![Example showing creating a new Python repl]({% include _functions/image_path.html name='Image.jpeg' %}){: .center}
 
-Your new project will automatically create a file named `main.py` and open a Python IDLE for you, but we need to install Flask before we can start writing our app. On the left sidebar, click the "Packages" icon, which looks like a hexagonal box:
+Your new project will automatically create a file named `main.py` and open a Python IDE for you, but we need to install Flask before we can start writing our app. On the left sidebar, click the "Packages" icon, which looks like a hexagonal box:
 
 ![Repl editor with the "Packages" icon highlighted]({% include _functions/image_path.html name='Image%20(8).png' %}){: .center}
 

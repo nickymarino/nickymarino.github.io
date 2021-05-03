@@ -1,4 +1,5 @@
 @import "theme";
+@import "typography";
 @import "mixins";
 
 // Raise the top of the container to meet the header
@@ -21,7 +22,7 @@
 
 .container code,
 .container pre {
-    font-family: $font-stack-mono;
+    font-family: $typography-mono;
 }
 .container code {
     color: $color-code;
