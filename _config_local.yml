@@ -1,0 +1,4 @@
+# Special configurations for running Jekyll locally
+
+# Build future posts
+future: true

@@ -12,6 +12,9 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
+# Do not build future posts
+future: false
+
 # About/contact
 author:
   name:              Nicky Marino
