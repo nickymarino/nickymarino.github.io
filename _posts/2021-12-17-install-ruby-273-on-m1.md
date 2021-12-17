@@ -28,7 +28,8 @@ So I needed to find a way to install 2.7.3 on my Mac to build and run my website
 
 I'll put the winning command here at the top to keep things simple. Many thanks to [@d-lebed](https://github.com/d-lebed) for documenting their solution on this [GitHub issue](https://github.com/rvm/rvm/issues/5033#issuecomment-991949115). I lightly modified their code to use `$(brew --prefix)` instead of hardcoding where `homebrew` downloads `openssl@1.1`:
 
-```
+```bash
+# Winning script!
 brew install openssl@1.1
 
 export PATH="$(brew --prefix)/opt/openssl@1.1/bin:$PATH"
@@ -69,7 +70,7 @@ In a few GitHub issues, people recommended opening the Terminal app via Rosetta 
 
 I got *close* to a correct install when I added the openssl library to `LDFLAGS`, `CPPFLAGS`, and `PKG_CONFIG_PATH`:
 
-```
+```bash
 PATH="/usr/local/opt/openssl@1.1/bin:$PATH" \
 LDFLAGS="-L$(brew --prefix)/opt/openssl@1.1/lib" \
 CPPFLAGS="-I$(brew --prefix)/opt/openssl@1.1/include" \
