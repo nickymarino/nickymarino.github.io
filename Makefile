@@ -6,6 +6,7 @@ help:  ## Show this help
 # This uses your post on installing Ruby 2.7.3 on M1
 install:  ## Install Ruby via rvm and install required gems
 	sh _scripts/install_ruby.sh
+	rvm --ruby-version use 2.7.3
 	bundle install
 
 up:  ## Spin up the website locally

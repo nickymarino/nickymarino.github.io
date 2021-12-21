@@ -2,6 +2,7 @@
 layout: post
 title: How to Install Ruby 2.7.3 on M1 Mac
 description: In this post, I provide instructions on how to install Ruby 2.7.3 on an M1 Mac computer.
+cover_image: 2021/ruby-273-cover.png
 ---
 
 Installing Ruby or Python on M1 Macs is a nightmare. I've lost so many hours fighting compilers and Rosetta to these issues, so I'm documenting my installation steps to spare you[^and-me] a lot of headache.
