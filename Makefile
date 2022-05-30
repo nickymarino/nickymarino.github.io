@@ -10,7 +10,7 @@ install:  ## Install Ruby via rvm and install required gems
 	bundle install
 
 up:  ## Spin up the website locally
-	bundle exec jekyll serve --incremental --config _config.yml,_config_local.yml
+	bundle exec jekyll serve --incremental --drafts --future --config _config.yml,_config_local.yml
 
 clean:  ## Clean the site's build directory
 	bundle exec jekyll clean
