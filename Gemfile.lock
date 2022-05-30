@@ -63,6 +63,8 @@ GEM
     minitest (5.15.0)
     nokogiri (1.13.6-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.13.6-x86_64-linux)
+      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.7)
@@ -84,6 +86,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   jekyll
@@ -92,6 +95,9 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   rake
+
+RUBY VERSION
+   ruby 2.7.3p183
 
 BUNDLED WITH
    2.3.14
