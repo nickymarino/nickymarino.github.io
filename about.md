@@ -5,7 +5,7 @@ title: About
 
 Hi! I'm Nicky Marino. This site is dedicated to my thoughts on software development. You can contact me via [email](mailto:{{ site.author.email }}), on [GitHub]({{ site.author.github }}), or on [LinkedIn]({{ site.author.linkedin }}).
 
-I'm an AI Engineer at [ModelOp](https://www.modelop.com) enabling enterprise businesses to deploy, monitor, and govern machine learning models at scale.
+I'm a Software Engineer at [Thoughtful Automation](https://www.thoughtfulautomation.com) building the world's largest automated workforce. I was previously an AI Engineer at [ModelOp](https://www.modelop.com) enabling enterprise businesses to deploy, monitor, and govern machine learning models at scale.
 
 In my free time, I like to lift heavy things, [read](https://www.goodreads.com/user/show/71810120-nicky), [play](https://dodgeroll.com/gungeon/) [rogue-lites](https://www.supergiantgames.com/games/hades/), and learn new technologies.
 
