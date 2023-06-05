@@ -1,5 +1,6 @@
 _site
 .DS_Store
+.history
 .jekyll
 .jekyll-cache
 .jekyll-metadata
