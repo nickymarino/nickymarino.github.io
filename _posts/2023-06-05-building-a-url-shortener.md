@@ -52,5 +52,4 @@ I'm going to use [SST][sst] to manage the infrastructure and stitching all the p
 [mono-table]: https://aws.amazon.com/blogs/compute/creating-a-single-table-design-with-amazon-dynamodb/
 [dynamo]: https://aws.amazon.com/dynamodb/
 
-
 I'm really excited to embark on this journey. By documenting my progress in short blog posts, I hope to share my experiences and insights with others who may be interested in similar projects. Stay tuned for future updates as I delve into the development process and bring this project to life. Let's build something amazing together!
