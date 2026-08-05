@@ -4,8 +4,18 @@ title: Home
 description: Learn how to write beautiful code and optimize algorithms
 ---
 
+{% comment %}
+Posts with `hidden: true` in their front matter are kept off the home feed. They
+are still published — reachable by URL, listed in the archive, and in the feed.
+
+The filter runs against site.posts rather than paginator.posts on purpose: the
+paginator slices before any filtering, so hiding a run of consecutive recent
+posts would leave the first page short or empty.
+{% endcomment %}
+{% assign visible_posts = site.posts | where_exp: "post", "post.hidden != true" %}
+
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in visible_posts limit: site.paginate %}
   <div class="post">
     {% if post.cover_image %}<img src="{{ site.url }}/public/assets/{{ post.cover_image }}" alt="{{ post.title }} Cover Image" class="center">{% else %}{% endif %}
 

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: >
   Shorty Diary #10: Enable non-dev deployments
