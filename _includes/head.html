@@ -14,15 +14,18 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/styles.css">
+  <!-- CSS
+       styles.css loads LAST so the design system wins the cascade over the
+       original Poole/Lanyon theme sheets. Don't reorder these. -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/styles.css">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Fonts: Newsreader for display type, Manrope for body and UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400..700&display=swap" rel="stylesheet">
 
   {% include favicons.html %}
 

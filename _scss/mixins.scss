@@ -1,10 +1,30 @@
-@import "theme";
+/* Shared link treatments. Mixins only — emits no CSS. */
 
+// Body links: blue at rest, yellow on hover, yellow underline throughout.
 @mixin default-link-style {
-    color: $color-link-text;
+    color: var(--link);
     text-decoration: underline;
-    text-decoration-color: $color-link-line;
-    text-decoration-thickness: 2px;
+    text-decoration-color: var(--link-underline);
+    text-decoration-thickness: var(--underline-thickness);
+    text-underline-offset: var(--underline-offset);
+    transition: var(--transition-link);
+
+    &:hover, &:focus, &:active {
+        color: var(--link-hover);
+        text-decoration-color: var(--link-hover);
+    }
+}
+
+// Nav and footer links: no underline at rest, colour change only.
+// Pass $color to sit on a different resting tone (footer links are fainter).
+@mixin quiet-link-style($color: var(--text-body)) {
+    color: $color;
+    text-decoration: none;
+    transition: var(--transition-link);
+
+    &:hover, &:focus, &:active {
+        color: var(--link-hover);
+    }
 }
 
 @mixin reset-link-style {

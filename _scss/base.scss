@@ -1,5 +1,6 @@
-@import "theme";
+@import "tokens";
 @import "typography";
+@import "mixins";
 
 @import "alert";
 @import "container";
@@ -8,6 +9,16 @@
 @import "masthead";
 @import "post";
 
+// Pin the root so a rem is always 16px.
+//
+// poole.css sets `html { font-size: 16px }` and raises it to 18px above 38em,
+// which silently inflated every rem-based token by 12.5% on desktop — the type
+// scale changed size class at a breakpoint. This overrides it at all widths;
+// styles.css loads after poole.css, so it wins on source order.
+html {
+  font-size: 16px;
+}
+
 // Set height for sticky footer flex box
 html, body {
   height: 100%;
@@ -15,46 +26,39 @@ html, body {
 
 body {
   @include typography-body1;
-  color: $color-text;
-  background-color: $color-background;
+  color: var(--text-body);
+  background-color: var(--bg);
+  transition: var(--transition-theme);
 
   // Create a flex column for the sticky footer vs the content container
   display: flex;
   flex-direction: column;
 }
 
+::selection {
+  background-color: var(--selection-bg);
+}
+
 h1, h2, h3, h4, h5, h6 {
-    color: $color-text;
+    color: var(--text-heading);
     text-rendering: optimizeLegibility;
 }
 
-h1 {
-  @include typography-headline1;
-}
+h1 { @include typography-headline1; }
+h2 { @include typography-headline2; }
+h3 { @include typography-headline3; }
+h4 { @include typography-headline4; }
+h5 { @include typography-headline5; }
+h6 { @include typography-headline6; }
 
-h2 {
-  @include typography-headline2;
-}
-
-h3 {
-  @include typography-headline3;
-}
-
-h4 {
-  @include typography-headline4;
-}
-
-h5 {
-  @include typography-headline5;
-}
-
-h6 {
-  @include typography-headline6;
+p {
+  margin: var(--gap-stack) 0;
 }
 
 sup .footnote {
   // No link underlining for footnote numbers
   border-bottom: none;
+  text-decoration: none;
 }
 
 // Horizontal center
@@ -66,22 +70,38 @@ sup .footnote {
 
 /* Quotes */
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: $color-quote-text;
-  border-left: .25rem solid $color-quote-border;
+  padding: var(--space-2) var(--space-4);
+  margin: var(--gap-stack) 0;
+  color: var(--text-muted);
+  border-left: var(--border-quote) solid var(--border);
 }
 blockquote p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 30em) {
   blockquote {
-    padding-right: 5rem;
+    padding-right: var(--space-8);
     padding-left: 1.25rem;
   }
 }
 
-/* Images */
+/* Images
+ *
+ * Screenshots and diagrams only — the system has no photography or illustration.
+ * They span the full measure at 6px radius; captions are muted.
+ */
+.container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.container img + em {
+  @include typography-caption;
+  display: block;
+  color: var(--text-muted);
+  text-align: center;
+}
 
 // Better emoji support
 img.emoji {
@@ -93,36 +113,38 @@ img.emoji {
   vertical-align: text-top;
   padding: 0;
   margin: 0;
+  border-radius: 0;
 }
 
 /* Wrap
  *
- * Size the masthead and container together
+ * Size the masthead and container together. Four steps, unchanged since 2018.
  */
 
 .wrap {
-  max-width: 28rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
+  max-width: $wrap-max;
+  padding-left:  $wrap-gutter;
+  padding-right: $wrap-gutter;
   margin-left:  auto;
   margin-right: auto;
+  width: 100%;
 }
 
 // Mobile screen sizes
-@media (min-width: 38em) {
+@media (min-width: $bp-sm) {
   .wrap {
-    max-width: 32rem;
+    max-width: $wrap-max-sm;
   }
 }
 // Medium (tablet) screen sizes
-@media (min-width: 56em) {
+@media (min-width: $bp-md) {
   .wrap {
-    max-width: 38rem;
+    max-width: $wrap-max-md;
   }
 }
 // Desktop screen sizes
-@media (min-width: 100em) {
+@media (min-width: $bp-lg) {
   .wrap {
-    max-width: 46rem;
+    max-width: $wrap-max-lg;
   }
 }

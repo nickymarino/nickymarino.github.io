@@ -1,21 +1,15 @@
-// Styling for toast-like alert notifications
-
-@import "theme";
+// Outlined inline notice for post asides
 
 .alert {
-    background-color: $color-alert-background;
-    border: 2px solid;
-    border-color: $color-alert-border;
-    border-radius: .3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    background-color: var(--surface-sunken);
+    border: var(--border-accent) solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    padding: var(--space-2) var(--space-3);
 }
 
 .alert-title,
 .alert-content {
     margin-top: 0;
     margin-bottom: 0;
-    color: $color-alert-content;
+    color: var(--text-muted);
 }

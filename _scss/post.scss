@@ -1,22 +1,61 @@
-@import "theme";
 @import "typography";
 @import "mixins";
 
-.post-title {
-    @include typography-headline1;
-    font-weight: 700;
+/* Post card — the primary content unit, and the only card in the system.
+ * 8px radius, no border, lifts 2px on hover.
+ */
 
-    h1 {
-        padding-bottom: -10px;
-    }
+.post {
+    background: var(--surface-card);
+    border-radius: var(--radius-lg);
+    padding: var(--pad-card);
+    margin-bottom: var(--gap-card);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-card);
+}
+
+// Only the feed's cards lift — a post page is a single card you're already inside.
+.posts .post:hover {
+    transform: var(--lift-hover);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.post-title {
+    @include typography-display(var(--text-2xl));
+    margin-top: 0;
+    margin-bottom: var(--space-2);
 
     a {
-        @include reset-link-style;
+        @include quiet-link-style(var(--text-heading));
+    }
+
+    // The link-post chain glyph sits ahead of the title
+    .oi {
+        font-size: 0.6em;
+        vertical-align: middle;
+        margin-right: var(--space-2);
+        color: var(--text-muted);
     }
 }
 
 .post-date {
-    @include typography-subtitle1;
-    letter-spacing: -0.01em;
-    color: $color-post-date;
+    @include typography-meta;
+    display: block;
+    color: var(--text-muted);
+    margin-bottom: var(--gap-stack);
+}
+
+// Section headings inside a post need room above them
+.post h2,
+.post h3,
+.page h2,
+.page h3 {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-4);
+}
+
+.page-title {
+    @include typography-display(var(--text-3xl));
+    margin-top: 0;
+    margin-bottom: var(--space-5);
 }
