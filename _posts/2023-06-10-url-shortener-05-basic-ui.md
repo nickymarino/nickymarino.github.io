@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: >
   Dev Journal #5: A UI to list links

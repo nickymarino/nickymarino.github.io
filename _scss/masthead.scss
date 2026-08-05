@@ -1,46 +1,53 @@
-@import "theme";
 @import "typography";
 @import "mixins";
 
+/* Masthead — the 4px yellow rule is the site's one structural use of the accent. */
+
 .masthead {
-    @include typography-headline1;
-    padding-top:    1rem;
-    border-bottom: 2px solid $color-primary;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-6);
+    position: relative;
+}
+
+.masthead::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-top: var(--space-2);
+}
+
+.masthead nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--space-2);
 }
 
 // No decoration for any header links
 .masthead a {
-    @include default-link-style;
-    text-decoration: none;
+    @include quiet-link-style;
 }
 
 .masthead-title {
+    @include typography-display(var(--text-3xl));
+    margin: 0;
     line-height: inherit;
-    float: left;
 }
 
 .masthead-links {
     list-style-type: none;
+    display: flex;
+    gap: var(--gap-inline);
     margin: 0;
     padding: 0;
-    padding-top: .25em; // Align with masthead title
-    float: right;
 
-    $separator-padding: 8px;
-
-    li {
-        float: left;
-        padding-left: $separator-padding;
-        padding-right: $separator-padding + $nav-separator-thickness;
-        border-right: $nav-separator-thickness solid $color-link-line;
-    }
-
-    li:first-child {
-        padding-left: 0;
-    }
-
-    li:last-child {
-        padding-right: 0;
-        border-right: 0;
+    a {
+        font-family: var(--font-sans);
+        font-size: var(--text-base);
+        font-weight: var(--weight-medium);
     }
 }

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: >
   Dev Journal #8: I dub thee shorty

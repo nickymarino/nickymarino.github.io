@@ -1,73 +1,85 @@
-/* Typography */
+/* Typography
+ *
+ * Mixins only — this file emits no CSS, so partials can import it freely.
+ * Two families: Newsreader (serif) for display type, Manrope for body and UI.
+ * Values come from tokens.scss.
+ *
+ * The previous Material type scale lived here with unitless font sizes
+ * (`font-size: 100`), which is invalid CSS and was silently dropped by every
+ * browser — headings had been rendering at UA defaults. Sizes below are real.
+ */
 
-// Material typography: https://material.io/design/typography/the-type-system.html#type-scale
+@mixin typography-display($size, $weight: var(--weight-bold)) {
+  font-family: var(--font-display);
+  font-size: $size;
+  font-weight: $weight;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
 
-$typography-lato-stack: "Lato", sans-serif;
-$typography-roboto-stack: "Roboto", sans-serif;
-
+// Masthead wordmark and post titles on their own page
 @mixin typography-headline1 {
-  font-family: $typography-lato-stack;
-  font-size: 100;
+  @include typography-display(var(--text-3xl));
 }
 
+// Post titles in the feed
 @mixin typography-headline2 {
-  font-family: $typography-lato-stack;
-  font-size: 62;
+  @include typography-display(var(--text-2xl));
 }
 
+// Section headings inside a post
 @mixin typography-headline3 {
-  font-family: $typography-lato-stack;
-  font-size: 50;
+  @include typography-display(var(--text-xl), var(--weight-semibold));
 }
 
 @mixin typography-headline4 {
-  font-family: $typography-lato-stack;
-  font-size: 35;
+  @include typography-display(var(--text-lg), var(--weight-semibold));
 }
 
 @mixin typography-headline5 {
-  font-family: $typography-lato-stack;
-  font-size: 25;
+  @include typography-display(var(--text-base), var(--weight-semibold));
 }
 
 @mixin typography-headline6 {
-  font-family: $typography-lato-stack;
-  font-size: 21;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-snug);
 }
 
 @mixin typography-body1 {
-  font-family: $typography-roboto-stack;
-  font-size: 16;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-body);
 }
 
 @mixin typography-body2 {
-  font-family: $typography-roboto-stack;
-  font-size: 14;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
 }
 
-@mixin typography-subtitle1 {
-  font-family: $typography-lato-stack;
-  font-size: 17;
+// Post dates, footer links, captions
+@mixin typography-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
 }
 
-@mixin typography-subtitle2 {
-  font-family: $typography-lato-stack;
-  font-size: 15;
-}
-
-@mixin typography-button {
-  font-family: $typography-roboto-stack;
-  font-size: 14;
-}
-
-@mixin typography-overline {
-  font-family: $typography-roboto-stack;
-  font-size: 10;
+// Footer column labels and code-language eyebrows — the only uppercase in the system
+@mixin typography-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
 }
 
 @mixin typography-caption {
-  font-family: $typography-roboto-stack;
-  font-size: 12;
+  font-family: var(--font-sans);
+  font-size: var(--text-3xs);
+  line-height: var(--leading-normal);
 }
-
-$typography-mono: Menlo, Monaco, 'Lucida Sans Typewriter', monospace;

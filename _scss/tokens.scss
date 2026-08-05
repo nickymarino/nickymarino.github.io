@@ -1,0 +1,251 @@
+/* Design tokens
+ *
+ * Local mirror of the `tokens/` folder in the "Nicky Marino Blog" Claude Design
+ * project. This is the ONLY place a raw hex value should appear — every other
+ * partial consumes var(--*). When the design system changes, update this file.
+ *
+ * Light is the default. Dark applies under [data-theme="dark"] and under
+ * prefers-color-scheme: dark; the site has no toggle, it follows the OS.
+ */
+
+//// Color ramps ////
+
+:root {
+  // Yellow — the brand accent. --yellow-400 is the legacy site's $color-primary.
+  --yellow-200: #FFF3C4;
+  --yellow-300: #FFE380;
+  --yellow-400: #FFD54F;
+  --yellow-500: #F5B700;
+  --yellow-600: #F59E0B;
+
+  // Blue — link + interactive ramp
+  --blue-200: #BFDDFF;
+  --blue-300: #73BDFF;
+  --blue-400: #3B82F6;
+  --blue-500: #2563EB;
+
+  // Navy / ink — dark surfaces and light-mode text
+  --navy-900: #0D1217;
+  --navy-800: #131B24;
+  --navy-700: #1A2332;
+  --navy-600: #243244;
+  --navy-500: #364758;
+  --navy-400: #5C758C;
+  --navy-300: #A3BACC;
+  --navy-200: #D9E8F2;
+
+  // Paper / slate — light surfaces and dark-mode text
+  --paper-000: #FFFFFF;
+  --paper-050: #FAFAF9;
+  --paper-100: #F1F5F9;
+  --paper-200: #E2E8F0;
+  --slate-400: #94A3B8;
+  --slate-500: #64748B;
+  --slate-900: #1E293B;
+
+  // Monokai — preserved for archival code blocks only. Not used by default.
+  --monokai-bg: #272822;
+  --monokai-comment: #75715E;
+  --monokai-keyword: #66D9EF;
+  --monokai-string: #E6DB74;
+  --monokai-name: #A6E22E;
+  --monokai-operator: #F92672;
+  --monokai-literal: #AE81FF;
+  --monokai-text: #F8F8F2;
+}
+
+//// Semantic color ////
+
+// Emitted three times: as the :root default (light), under the dark selectors,
+// and as an explicit [data-theme="light"] override that beats the media query.
+@mixin palette-light {
+  --bg: var(--paper-050);
+  --surface-card: var(--paper-000);
+  --surface-sunken: var(--paper-100);
+  --text-body: var(--slate-900);
+  --text-heading: var(--slate-900);
+  --text-muted: var(--slate-500);
+  --text-faint: var(--slate-400);
+  --text-inverse: var(--paper-000);
+  --link: var(--blue-400);
+  --link-hover: var(--yellow-600);
+  // Underline matches the link color rather than the yellow accent.
+  --link-underline: var(--link);
+  --accent: var(--yellow-400);
+  --accent-strong: var(--yellow-600);
+  --accent-contrast-text: var(--navy-900);
+  --rule: var(--paper-200);
+  --border: var(--paper-200);
+  --border-strong: var(--slate-400);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --shadow-color-strong: rgba(0, 0, 0, 0.12);
+  --selection-bg: var(--yellow-200);
+
+  // Syntax — GitHub light
+  --syntax-keyword: #CF222E;
+  --syntax-string: #0A3069;
+  --syntax-function: #8250DF;
+  --syntax-comment: #6E7781;
+  --syntax-number: #0550AE;
+  --syntax-error: #82071E;
+}
+
+@mixin palette-dark {
+  --bg: var(--navy-900);
+  --surface-card: var(--navy-700);
+  --surface-sunken: var(--navy-800);
+  --text-body: var(--navy-200);
+  --text-heading: var(--navy-200);
+  --text-muted: var(--navy-300);
+  --text-faint: var(--navy-400);
+  --text-inverse: var(--navy-900);
+  --link: var(--blue-300);
+  --link-hover: var(--yellow-300);
+  // Underline matches the link color rather than the yellow accent.
+  --link-underline: var(--link);
+  --accent: var(--yellow-400);
+  --accent-strong: var(--yellow-300);
+  --accent-contrast-text: var(--navy-900);
+  --rule: var(--navy-500);
+  --border: var(--navy-500);
+  --border-strong: var(--navy-400);
+  --shadow-color: rgba(0, 0, 0, 0.30);
+  --shadow-color-strong: rgba(0, 0, 0, 0.40);
+  --selection-bg: rgba(255, 213, 79, 0.28);
+
+  // Syntax — GitHub dark
+  --syntax-keyword: #FF7B72;
+  --syntax-string: #A5D6FF;
+  --syntax-function: #D2A8FF;
+  --syntax-comment: #8B949E;
+  --syntax-number: #79C0FF;
+  --syntax-error: #FFA198;
+}
+
+:root { @include palette-light; }
+
+[data-theme="dark"] { @include palette-dark; }
+
+@media (prefers-color-scheme: dark) {
+  :root { @include palette-dark; }
+}
+
+// Explicit light override — wins over the prefers-color-scheme block above.
+[data-theme="light"] { @include palette-light; }
+
+//// Type ////
+
+:root {
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  // System mono stack — no webfont for code.
+  --font-mono: Menlo, Monaco, monospace;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  // Global multiplier on every size below. Dial this one number to resize the
+  // whole scale — nothing else needs touching.
+  //
+  // It sits at 1 because base.scss pins `html { font-size: 16px }`, so a rem is
+  // 16px everywhere and these values render at their nominal px. Without that
+  // pin, poole.css raises the root to 18px above 38em and the whole scale
+  // inflates 12.5% on desktop only.
+  --type-scale: 1;
+
+  // Sizes — a rem is 16px (see the root pin in base.scss), so --text-base is 18px.
+  --text-3xs: calc(0.75rem * var(--type-scale));
+  --text-2xs: calc(0.8125rem * var(--type-scale));
+  --text-xs: calc(0.875rem * var(--type-scale));
+  --text-sm: calc(0.9375rem * var(--type-scale));
+  --text-base: calc(1.125rem * var(--type-scale));
+  --text-lg: calc(1.25rem * var(--type-scale));
+  --text-xl: calc(1.75rem * var(--type-scale));
+  --text-2xl: calc(2.25rem * var(--type-scale));
+  --text-3xl: calc(2.5rem * var(--type-scale));
+  --text-4xl: calc(3.25rem * var(--type-scale));
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.5;
+  --leading-body: 1.7;
+
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-caps: 0.05em;
+}
+
+//// Spacing ////
+
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --gap-inline: var(--space-5);   // masthead nav links
+  --gap-stack: var(--space-4);    // paragraph rhythm
+  --gap-card: var(--space-7);     // between post cards
+  --pad-card: var(--space-6);     // inside a post card
+  --pad-code: var(--space-5);
+}
+
+//// Elevation ////
+
+:root {
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  --border-hairline: 1.5px;
+  --border-accent: 2px;
+  --border-quote: 0.25rem;
+  --border-code-flag: 4px;
+
+  --shadow-card: 0 4px 6px var(--shadow-color);
+  --shadow-card-hover: 0 8px 12px var(--shadow-color-strong);
+
+  --underline-thickness: 1.5px;
+  --underline-offset: 3px;
+  --underline-thickness-strong: 2px;
+}
+
+//// Motion ////
+
+:root {
+  --duration-fast: 0.2s;
+  --duration-theme: 0.3s;
+  --ease-default: ease;
+  --transition-link: color var(--duration-fast) var(--ease-default),
+                     text-decoration-color var(--duration-fast) var(--ease-default);
+  --transition-card: transform var(--duration-fast) var(--ease-default),
+                     box-shadow var(--duration-fast) var(--ease-default);
+  --transition-theme: background-color var(--duration-theme) var(--ease-default),
+                      color var(--duration-theme) var(--ease-default);
+  --lift-hover: translateY(-2px);
+}
+
+//// Layout ////
+//
+// Sass variables, not custom properties: media query conditions can't read var().
+
+$wrap-max: 28rem;
+$wrap-max-sm: 32rem;
+$wrap-max-md: 38rem;
+$wrap-max-lg: 46rem;
+$wrap-gutter: 1rem;
+
+$bp-sm: 38em;
+$bp-md: 56em;
+$bp-lg: 100em;

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: >
   Dev Journal #9: From Many, a Mono Package

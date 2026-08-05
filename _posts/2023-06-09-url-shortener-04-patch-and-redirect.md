@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: >
   Dev Journal #4: API patch links and redirect

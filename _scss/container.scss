@@ -1,12 +1,7 @@
-@import "theme";
 @import "typography";
 @import "mixins";
 
-// Raise the top of the container to meet the header
 .container {
-    margin-top: -1rem;
-    margin-bottom: -1rem;
-
     // Set flex constraints for sticky footer
     flex: 1 0 auto;
 }
@@ -19,21 +14,41 @@
 }
 
 // Code
+//
+// Inline code is a small tinted chip; block code is the one bordered surface
+// in the system — a hairline plus a 4px blue left flag.
 
 .container code,
 .container pre {
-    font-family: $typography-mono;
+    font-family: var(--font-mono);
 }
+
 .container code {
-    color: $color-code;
+    color: var(--text-body);
 }
 
 .container code.highlighter-rouge {
     // ONLY inline code directly has the highlighter-rouge class
-    background: $color-background-light;
-    border-radius: 5px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-right: 4px;
-    padding-left: 4px;
+    background: var(--surface-sunken);
+    border-radius: var(--radius-xs);
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+}
+
+.container pre {
+    background: var(--surface-sunken);
+    border: var(--border-hairline) solid var(--border);
+    border-left: var(--border-code-flag) solid var(--link);
+    border-radius: var(--radius-md);
+    padding: var(--pad-code);
+    margin: var(--space-5) 0;
+    overflow-x: auto;
+    line-height: var(--leading-normal);
+}
+
+.container pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: var(--text-xs);
 }
